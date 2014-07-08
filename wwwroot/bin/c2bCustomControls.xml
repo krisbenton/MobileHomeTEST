@@ -1,0 +1,68 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+c2bCustomControls
+</name>
+</assembly>
+<members>
+<member name="P:c2bCustomControls.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:c2bCustomControls.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:c2bCustomControls.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:c2bCustomControls.c2bWebControls.TextBoxes.myTextBoxBase.Disable">
+	<summary>
+ Clears the control text and disables the control
+ </summary>
+	<remarks></remarks>
+</member><member name="M:c2bCustomControls.c2bWebControls.TextBoxes.myTextBoxBase.CheckErrors(System.Boolean)">
+	<summary>
+	</summary>
+	<param name="ShowErrorLabel">Option to show associated error label control</param>
+	<returns>String containing data input error description</returns>
+	<remarks></remarks>
+</member><member name="M:c2bCustomControls.c2bWebControls.TextBoxes.myTextBoxBase.ClearErrors(System.Boolean)">
+	<summary>
+ Clears control's error text and optionally clears associated error label control
+ </summary>
+	<param name="ClearErrorLabel">Set to True to clear associated error label control</param>
+	<remarks></remarks>
+</member><member name="P:c2bCustomControls.c2bWebControls.DropDownLists.myDropDownListBase.SelectedLongValue">
+	<summary>
+ Sets the value of the dropdownlist to the item whose numeric value matches the argument. If no match is found then the
+ SelectedValue property remains unchanged
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:c2bCustomControls.c2bWebControls.DropDownLists.myDropDownListBase.Disable">
+	<summary>
+ Clears the control selection and disables the control
+ </summary>
+	<remarks></remarks>
+</member><member name="P:c2bCustomControls.c2bWebControls.DropDownLists.myDropDownListBase.PromptItemValue">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks>This is used during routine to write control data to data source. 
+ If the dropdownlist's SelectedValue property is the same as its PromptItemValue property then
+ a NULL value is written to the data column.
+ This property will typically be set during a listitem population routine.</remarks>
+</member><member name="M:c2bCustomControls.c2bWebControls.DropDownLists.myDropDownListBase.ClearErrors(System.Boolean)">
+	<summary>
+ Clears control's error text and optionally clears associated error label control
+ </summary>
+	<param name="ClearErrorLabel">Set to True to clear associated error label control</param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

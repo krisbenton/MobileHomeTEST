@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://webqa.primerateonline.net/primesrvc/service.asmx?wsdl" docRef="https://webqa.primerateonline.net/primesrvc/service.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://webqa.primerateonline.net/primesrvc/service.asmx" xmlns:q1="www.primerateonline.net/FinanceSrvc" binding="q1:Prime2006WSSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://webqa.primerateonline.net/primesrvc/service.asmx" xmlns:q2="www.primerateonline.net/FinanceSrvc" binding="q2:Prime2006WSSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

@@ -1,0 +1,590 @@
+﻿/* Cascading Stylesheet for Common Elements */
+.WatermarkCssClass
+{
+	font-family: Arial;
+	font-style: oblique;
+	color: #808080;
+	padding: 1px 5px 1px 5px;
+	border: 1px solid #7F9DB9;
+}
+.PageCaption
+{
+	font-family: 'Adobe Caslon Pro';
+	font-size: 40px;
+	font-weight: bold;
+	/*color: #2A2F79;*/
+	/*color: #141eae;*/
+	color:#3c3c3c;
+	margin-right: 10px;
+	letter-spacing: 5px;
+}
+.middleimage
+{
+	background-image:url(~/images/header-middle.gif) repeat-x;
+	background-color:White;
+}
+.LOBLogo
+{
+	font-family: 'Adobe Caslon Pro';
+	font-size: 40px;
+	font-weight: bold;
+	color: #F4260B;
+	text-decoration: underline overline;
+	margin-right: 10px;
+	letter-spacing: 5px;
+}
+.AdminLinks
+{
+   font-family: 'Adobe Caslon Pro';
+   font-size: 28px;
+   font-weight: bold;
+   color: #0000FF;
+   text-decoration: underline overline;
+   margin-right: 10px;
+   letter-spacing: 5px;
+}
+
+.center{margin-left: auto; margin-right:auto;}
+
+/* Begin: General */
+body { font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: normal; color:Gray; padding: 10px; }
+
+.heading
+{
+	padding: 1em 0 1em 0;
+	color:#5377A9;
+	font-family:Arial, Sans-Serif;
+	font-weight:bold;
+	font-size:2.0em;
+}
+body.template
+{
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 75%;
+    color: #666666;
+}
+body.template h1
+{
+    padding-bottom: 12px;
+    border-bottom: 1px dotted #bbbbbb;
+    font-size: 2.2em;
+    font-family: Trebuchet MS, Arial, sans-serif;
+    color: #888888;
+}
+span.allcaps
+{
+    font-variant: small-caps;
+}
+div.leftside
+{
+	float: left;
+	padding-top: 3px;
+}
+div.rightside
+{
+	float: right;
+}
+body.template h2
+{
+    margin-bottom: 10px;
+    font-family: Trebuchet MS, Arial, sans-serif;
+    font-size: 1.65em;
+    color: #888888;
+}
+div.back
+{
+    margin-bottom: -20px;
+    position: relative;
+    top: -28px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+div.back img
+{
+    position: relative;
+    margin-top: 0em;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: none;
+    background-color: #ffffff;
+}
+div.back a:link,
+div.back a:visited
+{
+    color: #839ce7;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding-right: 8px;
+    top: -.2em;
+    left: .25em;
+}
+div.back a:hover
+{
+    color: #000099;
+    text-decoration: underline !important;
+}
+/* End: General */
+
+/* Begin: Tables */
+body.template table.listview, table.gridview, table.detailstable 
+{
+    border: 1px solid #dbddff; 
+    border-bottom: 3px solid #dbddff;
+    border-collapse: collapse;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #666666;
+    font-size: 95%; 
+
+}
+
+body.template table.listview th, table.gridview th, table.detailstable th,
+body.template table.listview td, table.gridview td, table.detailstable td 
+{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.1em;
+}
+
+body.template table.listview th, table.gridview th, table.detailstable th
+{
+    background-position: 1px 1px;
+    background-repeat: repeat-x;
+    background-color: #ffffff;
+    font-size: 100%;
+    text-align: left;
+    line-height: 1.3em;
+    color: #666666;
+    border-left: 1px solid #dbddff;
+    border-right: 1px solid #dbddff;
+    border-bottom: 1px solid #dbddff;
+}
+
+body.template table.listview td, table.gridview td, table.detailstable td
+{
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px dotted #dadada;
+}
+
+body.template td.bold {
+    font-weight:bold;
+}
+
+body.template th a:link,
+body.template th a:visited,
+body.template th a:hover
+{
+    color: #666666;
+    text-decoration: none;
+}
+
+body.template td a:link,
+body.template td a:visited
+{
+    color: #718ABE;
+    text-decoration: none;
+    padding-right: 6px;
+}
+body.template td a:hover
+{
+    color: #000099;
+    text-decoration: underline !important;
+}
+table.gridview
+{
+    width: 100%;
+}
+table.gridview table td
+{
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+table.gridview th {
+    background-image:url(DynamicData/Content/Images/header_back.gif);
+}
+
+table.listview
+{
+    width: 100%;
+}
+table.listview td a:link, 
+table.listview td a:visited
+{
+    font-size: 100%;
+}
+table.listview table td
+{
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+table.listview th {
+    background-image:url(DynamicData/Content/Images/header_back.gif);
+}
+
+table.detailstable td
+{
+    border-left: 1px solid #dbddff;
+    border-right: 1px solid #dbddff;
+    vertical-align:top;
+}
+
+table.detailstable th
+{
+    background: #FCFDFE;
+    vertical-align:top;
+}
+
+td.nowrap 
+{
+    white-space: nowrap;
+}
+/* The following modifies the details table */
+body.template tr
+{
+    background: #FCFDFE;
+}
+/* The following modifies the controls in the list table footer */
+tr.footer td
+{
+    background: #dbddff;
+    height: 1.5em;
+}
+
+/* The following modifies the selected row in the list table */
+tr.selected td
+{
+    background: #fdffb8;
+}
+
+/* End: Tables */
+
+/* The following modifies the page number control which exists under the main table */
+div.pager
+{
+    padding: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+span.results1
+{
+    float:left;
+}
+span.results2
+{
+    float:right;
+}
+/* The following modifies the results per page control which exists under the main table */
+div.results
+{
+    display: inline;
+    position: relative;
+    padding: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-top: -1.75em;
+    float:right;
+}
+/* Set's the appearance of the drop down control*/
+.droplist
+{
+    padding: 0px;
+    font-family: Tahoma, Arial, Sans-Serif;
+    font-size: .95em;
+    color: #666666;
+}
+/* Bottom hyperlink design*/
+div.bottomhyperlink
+{
+    font-family: Tahoma, Arial, Sans-Serif;
+    font-size: 100%;
+    margin-top: -3px;
+}
+div.bottomhyperlink a:link,
+div.bottomhyperlink a:visited
+{
+    color: #839ce7;
+    text-decoration: none;
+
+    font-family: Tahoma, Arial, Sans-Serif;
+
+    font-size: 100%;
+
+    margin-top: -3px;
+}
+div.bottomhyperlink a:hover
+{
+
+    color: #000099;
+
+    text-decoration: underline !important;
+
+    font-family: Tahoma, Arial, Sans-Serif;
+
+    font-size: 100%;
+}
+div.bottomhyperlink img
+{
+    position: relative;
+    top: 0em;
+    padding-right: .4em;
+    border: none;
+}
+div.radnavmenu
+{
+	border: 1px solid #2A2F79;
+	padding: 5px;
+	background-color: #f3f7e7;
+	width: 99%;
+}
+/*Modal Popup*/
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+
+.modalPopup
+{
+	background-color: #FFFFFF;
+	border-width: 3px;
+	border-style: solid;
+	border-color: Gray;
+}
+/*web controls*/
+.myDefault
+{
+	font-family: Tahoma;
+	font-size: 10pt;
+	text-align: left;
+}
+.myDefaultTextBox
+{
+	padding: 1px 5px 1px 5px;
+	border: 1px solid #7F9DB9;
+	font-family: Tahoma;
+	font-size: 10pt;
+}
+.myDefaultDataLabel
+{
+	font-family: Tahoma;
+	font-size: 10pt;
+	font-weight: bold;
+}
+.myLabel-header
+{
+	font: bold 18px Georgia, "Times New Roman" , Times, serif;
+	color: #fff;
+}
+.headerCell
+{
+	background-color: Gray;
+}
+.myLabel-errorlabel
+{
+	font-family: Verdana;
+	font-size: x-small;
+	font-weight: normal;
+	color: #FF0000;
+	text-decoration: blink;
+}
+.comments
+{
+	font-family: 'courier New' , Courier, monospace;
+	font-size: 10pt;
+}
+.white
+{
+	background-color:White;
+	padding:none;
+}
+.FormView
+{
+	border: 1px solid silver;
+}
+.Panel-header
+{
+   background-color: #BAC5DF;
+}
+.Panel-bordered
+{
+	padding: 1px;
+	border: 1px solid #6F86BE;
+}
+.Panel-borderedBold
+{
+	border-style: solid;
+	border-color: #808080;
+	border-width: medium 1px medium medium;
+	padding: 1px;
+}
+.invisible
+{
+	visibility: hidden;
+	height: 0px;
+}
+.invisible invisible
+{
+	visibility: hidden;
+	height: 0px;
+}
+.invisible visible
+{
+	color: #800000;
+}
+.Button-go
+{
+	background-color: #008000;
+	font-family: verdana;
+	font-size: xx-small;
+	color: #FFFFFF;
+}
+.BulletList
+{
+	list-style-type: circle;
+}
+.myDropDownListAlignRight
+{
+	font-family: Tahoma;
+	font-size: 10pt;
+	direction: rtl;
+	text-align: right;
+}
+.myTextBoxAlignRight
+{
+	padding: 1px 5px 1px 5px;
+	border: 1px solid #7F9DB9;
+	font-family: Tahoma;
+	font-size: 10pt;
+	text-align: right;
+}
+.myTextBoxRO
+{
+	font-family: Tahoma;
+	font-size: 10pt;
+	border-width: 0px;
+	font-weight: bold;
+	background-color: transparent;
+}
+.myTextBoxROAlignRight
+{
+	font-family: Tahoma;
+	font-size: 10pt;
+	border-width: 0px;
+	font-weight: bold;
+	background-color: transparent;
+	text-align: right;
+}
+.myTextBoxROAlignCenter
+{
+	font-family: Tahoma;
+	font-size: 10pt;
+	border-width: 0px;
+	font-weight: bold;
+	background-color: transparent;
+	text-align: center;
+}
+.ErrorTextBox
+{
+	border-style: solid;
+	font-family: 'Book Antiqua';
+	font-size: small;
+	color: #800000;
+	background-color: #CCCCCC;
+}
+.condensedEmphasis
+{
+	font-size: .8em;
+	font-weight: bold;
+	font-family: tahoma;
+}
+.emphasis
+{
+	font-weight: bold;
+	font-family: tahoma;
+	font-size: 10pt;
+}
+.PageTitle
+{
+	font-family: Verdana;
+	font-size: 16pt;
+	color: #3c3c3c;
+	font-weight: bold;
+}
+.PageSubTitle
+{
+	font-family: Verdana;
+	font-size: 10pt;
+	color: #3c3c3c;
+	font-weight: bold;
+}
+.PageStatus
+{
+	font-family: Tahoma;
+	font-size: large;
+	color: #800000;
+}
+
+.largerFont
+{
+	font-size: 1.5em;
+}
+
+.multiPage
+{
+	border: 2px solid #666666;
+}	
+
+.policyInfo
+{
+	 padding-top: 20px;
+	 padding-bottom: 20px;
+	 padding-right: 10px;
+	 padding-left:10px;
+	 font-size: 1.4em;
+}	
+
+.policySubInfo
+{
+	 padding-top: 10px;
+	 padding-bottom: 10px;
+	 padding-right: 10px;
+	 padding-left:10px;
+}	
+	
+	
+.left
+{
+	float:left;
+}	
+
+.right
+{
+	margin-right: 35%;
+	float:right;
+}
+
+.noborder
+{
+	 border:none;	
+}
+
+.left
+{
+	float:left;
+}
+
+.larger
+{
+	font-size: 1.5em;
+}
+
+.margin
+{
+	margin-left: 5px;
+}

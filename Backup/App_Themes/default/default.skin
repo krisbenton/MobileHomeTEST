@@ -1,0 +1,86 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<asp:Label runat="server" CssClass="myDefault" />
+<asp:Label runat="server" skinid="required" Forecolor="Red"   Font-Bold="true" Font-Size="Smaller" Font-Names="Verdana" />
+<asp:Label runat="server" skinid="c2bLabel-header" CssClass="c2bLabel-header" />
+<asp:Label runat="server" skinid="PageTitle" CssClass="PageTitle" />
+<asp:Label runat="server" skinid="PageSubTitle" CssClass="PageSubTitle" />
+<asp:Label runat="server" skinid="PageStatus" CssClass="PageStatus" />
+<asp:Label runat="server" skinid="invisible" CssClass="invisible" />
+
+<ccLabel:c2bLabel runat="server" CssClass="myDefault" />
+<ccLabel:c2bLabel runat="server" skinid="invisible" CssClass="invisible" />
+
+<ccLabel:c2bDataLabel runat="server" CssClass="myDefaultDataLabel" />
+<ccLabel:c2bDataLabel runat="server" skinid="condensedEmphasis" CssClass="condensedEmphasis" />
+<ccLabel:c2bDataLabel runat="server" skinid="emphasis" CssClass="emphasis" />
+<ccLabel:c2bDataLabel runat="server" skinid="c2bLabel-header" CssClass="c2bLabel-header" />
+<ccLabel:c2bDataLabel runat="server" skinid="comments" CssClass="comments" />
+<ccLabel:c2bDataLabel runat="server" skinid="invisible" CssClass="invisible" />
+
+<ccLabel:c2bDateDataLabel runat="server" CssClass="myDefaultDataLabel" />
+<ccLabel:c2bDateDataLabel runat="server" skinid="condensedEmphasis" CssClass="condensedEmphasis" />
+<ccLabel:c2bDateDataLabel runat="server" skinid="emphasis" CssClass="emphasis" />
+<ccLabel:c2bDateDataLabel runat="server" skinid="invisible" CssClass="invisible" />
+
+<ccLabel:c2bNumericDataLabel runat="server" CssClass="myDefaultDataLabel" />
+<ccLabel:c2bNumericDataLabel runat="server" skinid="condensedEmphasis" CssClass="condensedEmphasis" />
+<ccLabel:c2bNumericDataLabel runat="server" skinid="emphasis" CssClass="emphasis" />
+<ccLabel:c2bNumericDataLabel runat="server" skinid="invisible" CssClass="invisible" />
+
+<ccTextBox:c2bTextBox runat="server" CssClass="myDefaultTextBox" />
+<ccTextBox:c2bTextBox runat="server" skinid="c2bTextBoxAlignRight" CssClass="c2bTextBoxAlignRight" />
+<ccTextBox:c2bTextBox runat="server" skinid="ErrorTextBox" CssClass="ErrorTextBox" />
+<ccTextBox:c2bTextBox runat="server" skinid="c2bTextBoxRO" CssClass="c2bTextBoxRO" />
+<ccTextBox:c2bTextBox runat="server" skinid="c2bTextBoxROAlignRight" CssClass="c2bTextBoxROAlignRight" />
+<ccTextBox:c2bTextBox runat="server" skinid="c2bTextBoxROAlignCenter" CssClass="c2bTextBoxROAlignCenter" />
+
+<ccTextBox:c2bNumericTextBox runat="server" CssClass="myDefaultTextBox" />
+<ccTextBox:c2bNumericTextBox runat="server" skinid="c2bTextBoxRO" CssClass="c2bTextBoxRO" />
+<ccTextBox:c2bNumericTextBox runat="server" skinid="c2bTextBoxROAlignRight" CssClass="c2bTextBoxROAlignRight" />
+<ccTextBox:c2bNumericTextBox runat="server" skinid="c2bTextBoxAlignRight" CssClass="c2bTextBoxAlignRight" />
+
+<ccTextBox:c2bDateTextBox runat="server" CssClass="myDefaultTextBox" />
+<ccTextBox:c2bDateTextBox runat="server" skinid="c2bTextBoxRO" CssClass="c2bTextBoxRO" />
+<ccTextBox:c2bDateTextBox runat="server" skinid="c2bTextBoxROAlignRight" CssClass="c2bTextBoxROAlignRight" />
+<ccTextBox:c2bDateTextBox runat="server" skinid="c2bTextBoxAlignRight" CssClass="c2bTextBoxAlignRight" />
+
+<ccDropDownList:c2bDropDownList runat="server" CssClass="myDefault" />
+<ccDropDownList:c2bDropDownList runat="server" skinid="myDDLAlignRight" CssClass="c2bDropDownListAlignRight" />
+<ccDropDownList:c2bDropDownList runat="server" skinid="invisible" CssClass="invisible" />
+
+<ccCheckBox:c2bCheckBox runat="server" CssClass="myDefault" />
+<ccCheckBox:c2bCheckBox runat="server" skinid="invisible" CssClass="invisible" />
+
+<asp:RadioButton runat="server" CssClass="myDefault" />
+
+<asp:CheckBox runat="server" CssClass="myDefault" />
+
+<asp:FormView runat="server" CssClass="FormView" />
+
+<asp:Panel runat="server" skinid="Panel-header" CssClass="Panel-header" />
+<asp:Panel runat="server" skinid="Panel-bordered" CssClass="Panel-bordered" />
+<asp:Panel runat="server" skinid="Panel-borderedBold" CssClass="Panel-borderedBold" />
+<asp:Panel runat="server" skinid="Panel-invisible" CssClass="invisible" />
+
+<asp:GridView runat="server" CssClass="myDefault" />
+
+<asp:HyperLink runat="server" CssClass="myDefault" />
+
+<asp:LinkButton runat="server" CssClass="myDefault" />
+<asp:LinkButton runat="server" skinid="LOBLogo" CssClass="LOBLogo" />
+<asp:LinkButton runat="server" skinid="AdminLinks" CssClass="AdminLinks" />

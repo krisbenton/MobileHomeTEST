@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{4E74D9E1-F397-4F6C-9140-4A58289ADC38}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MobileHomeRater</RootNamespace>
+    <AssemblyName>MobileHomeRater</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MobileHomeRater.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MobileHomeRater.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.50731.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="c2bCustomControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\c2bCustomControls.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v12.2, Version=12.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TallComponents.Pdf.Kit, Version=2.0.55.0, Culture=neutral, PublicKeyToken=76bf2dedaa68ccb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\TallComponents.Pdf.Kit.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting, Version=4.1.10.714, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WebForms, Version=4.1.10.714, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2010.2.713.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2012.2.724.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Application\ApplicationPrint.aspx" />
+    <Content Include="Application\ARApplication.aspx" />
+    <Content Include="Application\LloydsApplication.aspx" />
+    <Content Include="App_Themes\default\body_bg.jpg" />
+    <Content Include="App_Themes\default\MasterStyle.css" />
+    <Content Include="App_Themes\default\StyleSheet.css" />
+    <Content Include="bin\MobileHomeRater.dll" />
+    <Content Include="bin\MobileHomeRater.pdb" />
+    <Content Include="images\Accept.png" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\Calculate.png" />
+    <Content Include="images\Calendar.png" />
+    <Content Include="images\Clear.png" />
+    <Content Include="images\colonial-header.jpg" />
+    <Content Include="images\DollarSign.png" />
+    <Content Include="images\Edit.png" />
+    <Content Include="images\fade.png" />
+    <Content Include="images\Finance.png" />
+    <Content Include="images\Go.png" />
+    <Content Include="images\goPaperless.png" />
+    <Content Include="images\header-left-new.jpg" />
+    <Content Include="images\header-left-new.png" />
+    <Content Include="images\header-left.jpg" />
+    <Content Include="images\header-left.png" />
+    <Content Include="images\header-middle.gif" />
+    <Content Include="images\header-right-color.png" />
+    <Content Include="images\header-right-new.jpg" />
+    <Content Include="images\header-right.gif" />
+    <Content Include="images\header.jpg" />
+    <Content Include="images\hl.jpg" />
+    <Content Include="images\Import.png" />
+    <Content Include="images\Info.png" />
+    <Content Include="images\Message.png" />
+    <Content Include="images\Printer.png" />
+    <Content Include="images\search.png" />
+    <Content Include="images\Start.png" />
+    <Content Include="images\test.png" />
+    <Content Include="PremFinance\PremFinance.aspx" />
+    <Content Include="Quote\quotePrintFinanceImport.aspx" />
+    <Content Include="Quote\quotePrintImport.aspx" />
+    <Content Include="Quote\findImportQuote.aspx" />
+    <Content Include="Quote\quotePrint.aspx" />
+    <Content Include="Quote\findQuote.aspx" />
+    <Content Include="Quote\priorLoss.aspx" />
+    <Content Include="Quote\quote.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <None Include="Web References\primeRate\service.disco" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Login.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.designer.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.vb">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.vb">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ApplicationPrint.aspx.designer.vb">
+      <DependentUpon>ApplicationPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ApplicationPrint.aspx.vb">
+      <DependentUpon>ApplicationPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\ARApplication.aspx.designer.vb">
+      <DependentUpon>ARApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\ARApplication.aspx.vb">
+      <DependentUpon>ARApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Application\LloydsApplication.aspx.designer.vb">
+      <DependentUpon>LloydsApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\LloydsApplication.aspx.vb">
+      <DependentUpon>LloydsApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\Common.vb" />
+    <Compile Include="Code\Extensions.vb" />
+    <Compile Include="Code\Finance.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\mySession.vb" />
+    <Compile Include="IntPage.Master.designer.vb">
+      <DependentUpon>IntPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="IntPage.Master.vb">
+      <DependentUpon>IntPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PremFinance\PremFinance.aspx.designer.vb">
+      <DependentUpon>PremFinance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PremFinance\PremFinance.aspx.vb">
+      <DependentUpon>PremFinance.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Quote\quotePrintFinanceImport.aspx.designer.vb">
+      <DependentUpon>quotePrintFinanceImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quote\quotePrintFinanceImport.aspx.vb">
+      <DependentUpon>quotePrintFinanceImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quote\quotePrintImport.aspx.designer.vb">
+      <DependentUpon>quotePrintImport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quote\quotePrintImport.aspx.vb">
+      <DependentUpon>quotePrintImport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quote\findImportQuote.aspx.designer.vb">
+      <DependentUpon>findImportQuote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quote\findImportQuote.aspx.vb">
+      <DependentUpon>findImportQuote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quote\quotePrint.aspx.designer.vb">
+      <DependentUpon>quotePrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quote\quotePrint.aspx.vb">
+      <DependentUpon>quotePrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quote\findQuote.aspx.designer.vb">
+      <DependentUpon>findQuote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quote\findQuote.aspx.vb">
+      <DependentUpon>findQuote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quote\priorLoss.aspx.designer.vb">
+      <DependentUpon>priorLoss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quote\priorLoss.aspx.vb">
+      <DependentUpon>priorLoss.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quote\quote.aspx.designer.vb">
+      <DependentUpon>quote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quote\quote.aspx.vb">
+      <DependentUpon>quote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web References\primeRate\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <None Include="App_Themes\.svn\entries" />
+    <None Include="App_Themes\default\.svn\entries" />
+    <None Include="App_Themes\default\.svn\text-base\default.skin.svn-base" />
+    <None Include="App_Themes\default\.svn\text-base\MasterStyle.css.svn-base" />
+    <None Include="App_Themes\default\.svn\text-base\StyleSheet.css.svn-base" />
+    <Content Include="App_Themes\default\default.skin" />
+    <None Include="App_Themes\Thumbs.db" />
+    <Content Include="IntPage.Master" />
+    <None Include="images\.svn\entries" />
+    <None Include="images\.svn\prop-base\Accept.png.svn-base" />
+    <None Include="images\.svn\prop-base\Calendar.png.svn-base" />
+    <None Include="images\.svn\prop-base\Clear.png.svn-base" />
+    <None Include="images\.svn\prop-base\DollarSign.png.svn-base" />
+    <None Include="images\.svn\prop-base\Edit.png.svn-base" />
+    <None Include="images\.svn\prop-base\Go.png.svn-base" />
+    <None Include="images\.svn\prop-base\header.jpg.svn-base" />
+    <None Include="images\.svn\prop-base\Import.png.svn-base" />
+    <None Include="images\.svn\prop-base\Info.png.svn-base" />
+    <None Include="images\.svn\prop-base\Message.png.svn-base" />
+    <None Include="images\.svn\prop-base\Printer.png.svn-base" />
+    <None Include="images\.svn\prop-base\search.png.svn-base" />
+    <None Include="images\.svn\prop-base\Start.png.svn-base" />
+    <None Include="images\.svn\props\header-left-new.png.svn-work" />
+    <None Include="images\.svn\props\test.png.svn-work" />
+    <None Include="images\.svn\text-base\Accept.png.svn-base" />
+    <None Include="images\.svn\text-base\Calendar.png.svn-base" />
+    <None Include="images\.svn\text-base\Clear.png.svn-base" />
+    <None Include="images\.svn\text-base\DollarSign.png.svn-base" />
+    <None Include="images\.svn\text-base\Edit.png.svn-base" />
+    <None Include="images\.svn\text-base\Go.png.svn-base" />
+    <None Include="images\.svn\text-base\header.jpg.svn-base" />
+    <None Include="images\.svn\text-base\Import.png.svn-base" />
+    <None Include="images\.svn\text-base\Info.png.svn-base" />
+    <None Include="images\.svn\text-base\Message.png.svn-base" />
+    <None Include="images\.svn\text-base\Printer.png.svn-base" />
+    <None Include="images\.svn\text-base\search.png.svn-base" />
+    <None Include="images\.svn\text-base\Start.png.svn-base" />
+    <None Include="images\test.psd" />
+    <None Include="images\Thumbs.db" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site.Master" />
+    <None Include="Web References\primeRate\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\primeRate\service.wsdl" />
+    <None Include="Web References\primeRate\TSrvcResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ApplicationPages\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Themes\.svn\prop-base\" />
+    <Folder Include="App_Themes\.svn\props\" />
+    <Folder Include="App_Themes\.svn\text-base\" />
+    <Folder Include="App_Themes\.svn\tmp\prop-base\" />
+    <Folder Include="App_Themes\.svn\tmp\props\" />
+    <Folder Include="App_Themes\.svn\tmp\text-base\" />
+    <Folder Include="App_Themes\default\.svn\prop-base\" />
+    <Folder Include="App_Themes\default\.svn\props\" />
+    <Folder Include="App_Themes\default\.svn\tmp\prop-base\" />
+    <Folder Include="App_Themes\default\.svn\tmp\props\" />
+    <Folder Include="App_Themes\default\.svn\tmp\text-base\" />
+    <Folder Include="images\.svn\tmp\prop-base\" />
+    <Folder Include="images\.svn\tmp\props\" />
+    <Folder Include="images\.svn\tmp\text-base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://webqa.primerateonline.net/primesrvc/service.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\primeRate\</RelPath>
+      <UpdateFromURL>https://webqa.primerateonline.net/primesrvc/service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MobileHomeRater_primeRate_Prime2006WS</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56967</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

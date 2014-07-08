@@ -1,0 +1,4017 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MobileHomeRater
+</name>
+</assembly>
+<members>
+<member name="F:MobileHomeRater.IntPage.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.IntPage.head">
+	<summary>
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.IntPage.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.IntPage.Panel1">
+	<summary>
+Panel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.IntPage.pnlUserID">
+	<summary>
+pnlUserID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.IntPage.Image1">
+	<summary>
+Image1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.IntPage.Image2">
+	<summary>
+Image2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.IntPage.contentplaceholder2">
+	<summary>
+contentplaceholder2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.IntPage.ContentPlaceHolderMenu">
+	<summary>
+ContentPlaceHolderMenu control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.IntPage.ContentPlaceHolder1">
+	<summary>
+ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ChangePassword.ChangeUserPassword">
+	<summary>
+ChangeUserPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.Register.RegisterUser">
+	<summary>
+RegisterUser control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.Register.RegisterUserWizardStep">
+	<summary>
+RegisterUserWizardStep control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:MobileHomeRater.My.MyWebExtension.Application">
+	<summary>
+ Returns information about the current application.
+ </summary>
+</member><member name="P:MobileHomeRater.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:MobileHomeRater.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:MobileHomeRater.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:MobileHomeRater.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:MobileHomeRater.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="P:MobileHomeRater.My.MyWebExtension.WebServices">
+	<summary>
+ Provides access to WebServices added to this project.
+ </summary>
+</member><member name="T:MobileHomeRater.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:MobileHomeRater.ARApplication.sc2">
+	<summary>
+sc2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label3">
+	<summary>
+Label3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.brokReg">
+	<summary>
+brokReg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label4">
+	<summary>
+Label4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label5">
+	<summary>
+Label5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.txtName">
+	<summary>
+txtName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label6">
+	<summary>
+Label6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.txtDOB">
+	<summary>
+txtDOB control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label7">
+	<summary>
+Label7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.txtAddress">
+	<summary>
+txtAddress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label8">
+	<summary>
+Label8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.txtCity">
+	<summary>
+txtCity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label9">
+	<summary>
+Label9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.txtState">
+	<summary>
+txtState control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label10">
+	<summary>
+Label10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.txtZip">
+	<summary>
+txtZip control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label11">
+	<summary>
+Label11 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.txtCounty">
+	<summary>
+txtCounty control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label12">
+	<summary>
+Label12 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.txtPhone">
+	<summary>
+txtPhone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label13">
+	<summary>
+Label13 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.txtOcc">
+	<summary>
+txtOcc control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label14">
+	<summary>
+Label14 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.TextBox1">
+	<summary>
+TextBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label15">
+	<summary>
+Label15 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.txtSpouseName">
+	<summary>
+txtSpouseName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label16">
+	<summary>
+Label16 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.TextBox2">
+	<summary>
+TextBox2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label17">
+	<summary>
+Label17 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.txtSpouseDOB">
+	<summary>
+txtSpouseDOB control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label18">
+	<summary>
+Label18 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.txtAddInsured">
+	<summary>
+txtAddInsured control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label35">
+	<summary>
+Label35 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.txtAgentName">
+	<summary>
+txtAgentName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label19">
+	<summary>
+Label19 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.TextBox3">
+	<summary>
+TextBox3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label25">
+	<summary>
+Label25 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label20">
+	<summary>
+Label20 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.TextBox4">
+	<summary>
+TextBox4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label21">
+	<summary>
+Label21 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.TextBox5">
+	<summary>
+TextBox5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label22">
+	<summary>
+Label22 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.TextBox6">
+	<summary>
+TextBox6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label23">
+	<summary>
+Label23 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.TextBox7">
+	<summary>
+TextBox7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label24">
+	<summary>
+Label24 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.TextBox8">
+	<summary>
+TextBox8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label26">
+	<summary>
+Label26 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.TextBox9">
+	<summary>
+TextBox9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label27">
+	<summary>
+Label27 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.TextBox10">
+	<summary>
+TextBox10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.Label28">
+	<summary>
+Label28 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.txtdistToFireDept">
+	<summary>
+txtdistToFireDept control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.ARApplication.TextBoxWatermarkExtender5">
+	<summary>
+TextBoxWatermarkExtender5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.Default.btnLogout">
+	<summary>
+btnLogout control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.findQuote.btnLogout">
+	<summary>
+btnLogout control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.findQuote.sc2">
+	<summary>
+sc2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.findQuote.pnlDefaultButton">
+	<summary>
+pnlDefaultButton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.findQuote.Label6">
+	<summary>
+Label6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.findQuote.txtQuoteID">
+	<summary>
+txtQuoteID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.findQuote.lblb1">
+	<summary>
+lblb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.findQuote.txtLastName">
+	<summary>
+txtLastName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.findQuote.searchbtn">
+	<summary>
+searchbtn control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.findQuote.RadGrid1">
+	<summary>
+RadGrid1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.Site.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.Site.head">
+	<summary>
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.Site.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.Site.Panel1">
+	<summary>
+Panel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.Site.pnlUserID">
+	<summary>
+pnlUserID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.Site.Image1">
+	<summary>
+Image1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.Site.Image2">
+	<summary>
+Image2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.Site.contentplaceholder2">
+	<summary>
+contentplaceholder2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.Site.btnLogout">
+	<summary>
+btnLogout control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.Site.lblPageCode">
+	<summary>
+lblPageCode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.Site.ContentPlaceHolder1">
+	<summary>
+ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.WebForm1.Panel1">
+	<summary>
+Panel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.WebForm1.Label3">
+	<summary>
+Label3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.WebForm1.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.WebForm1.txtUserID">
+	<summary>
+txtUserID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.WebForm1.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.WebForm1.txtPassword">
+	<summary>
+txtPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.WebForm1.btnLogin">
+	<summary>
+btnLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.WebForm1.lblLoginStatus">
+	<summary>
+lblLoginStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:MobileHomeRater.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:MobileHomeRater.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:MobileHomeRater.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:MobileHomeRater.quote.savebtn">
+	<summary>
+savebtn control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.btnLogout">
+	<summary>
+btnLogout control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.sc2">
+	<summary>
+sc2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label3">
+	<summary>
+Label3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label4">
+	<summary>
+Label4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label5">
+	<summary>
+Label5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label7">
+	<summary>
+Label7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label37">
+	<summary>
+Label37 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label101">
+	<summary>
+Label101 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.termdd">
+	<summary>
+termdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label6">
+	<summary>
+Label6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblAgency">
+	<summary>
+lblAgency control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.SubUpdatepanel1">
+	<summary>
+SubUpdatepanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label8">
+	<summary>
+Label8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtSubNumber">
+	<summary>
+txtSubNumber control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.tbwm1">
+	<summary>
+tbwm1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ddlSub_main">
+	<summary>
+ddlSub_main control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtsubNumber_results">
+	<summary>
+txtsubNumber_results control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.subBtn">
+	<summary>
+subBtn control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.subBtn2">
+	<summary>
+subBtn2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label9">
+	<summary>
+Label9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtAgConName">
+	<summary>
+txtAgConName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.TextBoxWatermarkExtender1">
+	<summary>
+TextBoxWatermarkExtender1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator3">
+	<summary>
+RequiredFieldValidator3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label11">
+	<summary>
+Label11 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtConEmail">
+	<summary>
+txtConEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.TextBoxWatermarkExtender2">
+	<summary>
+TextBoxWatermarkExtender2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator4">
+	<summary>
+RequiredFieldValidator4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label10">
+	<summary>
+Label10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtEffDate">
+	<summary>
+txtEffDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtEffectiveDate_CalendarExtender">
+	<summary>
+txtEffectiveDate_CalendarExtender control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.btnCalEffectiveDate">
+	<summary>
+btnCalEffectiveDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.TextBoxWatermarkExtender10">
+	<summary>
+TextBoxWatermarkExtender10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator5">
+	<summary>
+RequiredFieldValidator5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label13">
+	<summary>
+Label13 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtAppFirstName">
+	<summary>
+txtAppFirstName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.TextBoxWatermarkExtender5">
+	<summary>
+TextBoxWatermarkExtender5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator6">
+	<summary>
+RequiredFieldValidator6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label66">
+	<summary>
+Label66 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtAppLastName">
+	<summary>
+txtAppLastName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.TextBoxWatermarkExtender13">
+	<summary>
+TextBoxWatermarkExtender13 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator29">
+	<summary>
+RequiredFieldValidator29 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label14">
+	<summary>
+Label14 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtAppEmail">
+	<summary>
+txtAppEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.TextBoxWatermarkExtender4">
+	<summary>
+TextBoxWatermarkExtender4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label21">
+	<summary>
+Label21 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtDOB">
+	<summary>
+txtDOB control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.CalendarExtender1">
+	<summary>
+CalendarExtender1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.btnCalDOB">
+	<summary>
+btnCalDOB control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator8">
+	<summary>
+RequiredFieldValidator8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label15">
+	<summary>
+Label15 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtAppAddr">
+	<summary>
+txtAppAddr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.TextBoxWatermarkExtender12">
+	<summary>
+TextBoxWatermarkExtender12 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator9">
+	<summary>
+RequiredFieldValidator9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.updateZipPanel">
+	<summary>
+updateZipPanel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label16">
+	<summary>
+Label16 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtZip">
+	<summary>
+txtZip control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.zipbtn2">
+	<summary>
+zipbtn2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label19">
+	<summary>
+Label19 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.cddlCity">
+	<summary>
+cddlCity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label20">
+	<summary>
+Label20 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblState">
+	<summary>
+lblState control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label22">
+	<summary>
+Label22 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtCounty">
+	<summary>
+txtCounty control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label38">
+	<summary>
+Label38 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.DistToCoastUpdatepanel">
+	<summary>
+DistToCoastUpdatepanel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label17">
+	<summary>
+Label17 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.distToCoastDD">
+	<summary>
+distToCoastDD control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator10">
+	<summary>
+RequiredFieldValidator10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label23">
+	<summary>
+Label23 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.homeusedd">
+	<summary>
+homeusedd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator11">
+	<summary>
+RequiredFieldValidator11 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label24">
+	<summary>
+Label24 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.typedd">
+	<summary>
+typedd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator12">
+	<summary>
+RequiredFieldValidator12 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.updateValuationPanel">
+	<summary>
+updateValuationPanel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label25">
+	<summary>
+Label25 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtYear">
+	<summary>
+txtYear control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.TextBoxWatermarkExtender6">
+	<summary>
+TextBoxWatermarkExtender6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator13">
+	<summary>
+RequiredFieldValidator13 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label26">
+	<summary>
+Label26 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtLength">
+	<summary>
+txtLength control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.TextBoxWatermarkExtender7">
+	<summary>
+TextBoxWatermarkExtender7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator14">
+	<summary>
+RequiredFieldValidator14 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label27">
+	<summary>
+Label27 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtWidth">
+	<summary>
+txtWidth control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.TextBoxWatermarkExtender8">
+	<summary>
+TextBoxWatermarkExtender8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator15">
+	<summary>
+RequiredFieldValidator15 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label28">
+	<summary>
+Label28 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.manfdd">
+	<summary>
+manfdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator16">
+	<summary>
+RequiredFieldValidator16 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label29">
+	<summary>
+Label29 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtValuation">
+	<summary>
+txtValuation control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator17">
+	<summary>
+RequiredFieldValidator17 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.calcValue">
+	<summary>
+calcValue control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label36">
+	<summary>
+Label36 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label18">
+	<summary>
+Label18 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtcvgamt">
+	<summary>
+txtcvgamt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator24">
+	<summary>
+RequiredFieldValidator24 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label30">
+	<summary>
+Label30 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.protclassdd">
+	<summary>
+protclassdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator18">
+	<summary>
+RequiredFieldValidator18 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label31">
+	<summary>
+Label31 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.skirtdd">
+	<summary>
+skirtdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator19">
+	<summary>
+RequiredFieldValidator19 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label32">
+	<summary>
+Label32 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.liendd">
+	<summary>
+liendd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator20">
+	<summary>
+RequiredFieldValidator20 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label43">
+	<summary>
+Label43 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lapsdd">
+	<summary>
+lapsdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator7">
+	<summary>
+RequiredFieldValidator7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label33">
+	<summary>
+Label33 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.supheatdd">
+	<summary>
+supheatdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator21">
+	<summary>
+RequiredFieldValidator21 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label62">
+	<summary>
+Label62 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.supHeatTypedd">
+	<summary>
+supHeatTypedd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator25">
+	<summary>
+RequiredFieldValidator25 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label34">
+	<summary>
+Label34 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.PriorLosses_ModalPopupExtender">
+	<summary>
+PriorLosses_ModalPopupExtender control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.priorlosdd">
+	<summary>
+priorlosdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.modalShowbtn">
+	<summary>
+modalShowbtn control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator22">
+	<summary>
+RequiredFieldValidator22 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label110">
+	<summary>
+Label110 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.mhparkdd">
+	<summary>
+mhparkdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label111">
+	<summary>
+Label111 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.mhResMangdd">
+	<summary>
+mhResMangdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label112">
+	<summary>
+Label112 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.mhSpacdd">
+	<summary>
+mhSpacdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label113">
+	<summary>
+Label113 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.mhlightdd">
+	<summary>
+mhlightdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label114">
+	<summary>
+Label114 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.mhInsAge">
+	<summary>
+mhInsAge control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.prmbtn">
+	<summary>
+prmbtn control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ModalPopupExtender1">
+	<summary>
+ModalPopupExtender1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.PremModbtn">
+	<summary>
+PremModbtn control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Span1">
+	<summary>
+Span1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label59">
+	<summary>
+Label59 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label60">
+	<summary>
+Label60 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.llydstbl">
+	<summary>
+llydstbl control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label39">
+	<summary>
+Label39 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label58">
+	<summary>
+Label58 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label42">
+	<summary>
+Label42 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label45">
+	<summary>
+Label45 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label47">
+	<summary>
+Label47 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label49">
+	<summary>
+Label49 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label54">
+	<summary>
+Label54 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label51">
+	<summary>
+Label51 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label53">
+	<summary>
+Label53 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label55">
+	<summary>
+Label55 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label41">
+	<summary>
+Label41 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label48">
+	<summary>
+Label48 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label109">
+	<summary>
+Label109 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label12">
+	<summary>
+Label12 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Lloyds_Dwell">
+	<summary>
+Lloyds_Dwell control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Lloyds_PerLiab">
+	<summary>
+Lloyds_PerLiab control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Lloyds_PremLiab">
+	<summary>
+Lloyds_PremLiab control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Lloyds_AAS">
+	<summary>
+Lloyds_AAS control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Lloyds_APE">
+	<summary>
+Lloyds_APE control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Lloyds_PERep">
+	<summary>
+Lloyds_PERep control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Lloyds_FullRep">
+	<summary>
+Lloyds_FullRep control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Lloyds_100Ded">
+	<summary>
+Lloyds_100Ded control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Lloyds_MHRepCost">
+	<summary>
+Lloyds_MHRepCost control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Lloyds_Credits">
+	<summary>
+Lloyds_Credits control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Lloyds_Taxes">
+	<summary>
+Lloyds_Taxes control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Lloyds_Total">
+	<summary>
+Lloyds_Total control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.LloydsAppBtn">
+	<summary>
+LloydsAppBtn control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label57">
+	<summary>
+Label57 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label46">
+	<summary>
+Label46 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label35">
+	<summary>
+Label35 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label88">
+	<summary>
+Label88 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label50">
+	<summary>
+Label50 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label52">
+	<summary>
+Label52 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label40">
+	<summary>
+Label40 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label44">
+	<summary>
+Label44 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.whtxt">
+	<summary>
+whtxt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.aopdd">
+	<summary>
+aopdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator23">
+	<summary>
+RequiredFieldValidator23 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.optcbl">
+	<summary>
+optcbl control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtAAS">
+	<summary>
+txtAAS control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtAPE">
+	<summary>
+txtAPE control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.LlyodsLiabdd">
+	<summary>
+LlyodsLiabdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.LlyodsPremLiabdd">
+	<summary>
+LlyodsPremLiabdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.OPCOVPESINGLE">
+	<summary>
+OPCOVPESINGLE control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.OPCOVPEDOUBLE">
+	<summary>
+OPCOVPEDOUBLE control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.PEREPCOST">
+	<summary>
+PEREPCOST control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.FULLREPAIR">
+	<summary>
+FULLREPAIR control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.PERLIAB25">
+	<summary>
+PERLIAB25 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.PERLIAB50">
+	<summary>
+PERLIAB50 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.PERLIAB100">
+	<summary>
+PERLIAB100 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.PERLIAB300">
+	<summary>
+PERLIAB300 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.PREMLIAB25">
+	<summary>
+PREMLIAB25 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.PREMLIAB50">
+	<summary>
+PREMLIAB50 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.PREMLIAB100">
+	<summary>
+PREMLIAB100 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.DEDALLOTHER">
+	<summary>
+DEDALLOTHER control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.SEASSUR">
+	<summary>
+SEASSUR control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.MHREPCOST">
+	<summary>
+MHREPCOST control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ARFLtbl">
+	<summary>
+ARFLtbl control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label67">
+	<summary>
+Label67 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label81">
+	<summary>
+Label81 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label85">
+	<summary>
+Label85 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label87">
+	<summary>
+Label87 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label83">
+	<summary>
+Label83 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label84">
+	<summary>
+Label84 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label89">
+	<summary>
+Label89 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label91">
+	<summary>
+Label91 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label93">
+	<summary>
+Label93 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label107">
+	<summary>
+Label107 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label102">
+	<summary>
+Label102 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label61">
+	<summary>
+Label61 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_dwell1">
+	<summary>
+ar_dwell1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_unattStr1">
+	<summary>
+ar_unattStr1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_perEff1">
+	<summary>
+ar_perEff1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_perLiab1">
+	<summary>
+ar_perLiab1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_medpay1">
+	<summary>
+ar_medpay1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_baseprem1">
+	<summary>
+ar_baseprem1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_options1">
+	<summary>
+ar_options1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_fees1">
+	<summary>
+ar_fees1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_tax1">
+	<summary>
+ar_tax1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_total1">
+	<summary>
+ar_total1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label64">
+	<summary>
+Label64 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_aop_AR1">
+	<summary>
+dd_aop_AR1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator26">
+	<summary>
+RequiredFieldValidator26 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label63">
+	<summary>
+Label63 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_hurded_AR1">
+	<summary>
+dd_hurded_AR1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label108">
+	<summary>
+Label108 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_pl_AR1">
+	<summary>
+dd_pl_AR1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label148">
+	<summary>
+Label148 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_mp_AR1">
+	<summary>
+dd_mp_AR1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label65">
+	<summary>
+Label65 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txt_unattstr_AR1">
+	<summary>
+txt_unattstr_AR1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label104">
+	<summary>
+Label104 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txt_pp_AR1">
+	<summary>
+txt_pp_AR1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label98">
+	<summary>
+Label98 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_mhr_AR1">
+	<summary>
+dd_mhr_AR1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label100">
+	<summary>
+Label100 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_rep_AR1">
+	<summary>
+dd_rep_AR1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label103">
+	<summary>
+Label103 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txt_addlimrad_AR1">
+	<summary>
+txt_addlimrad_AR1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label106">
+	<summary>
+Label106 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txt_addlimfir_AR1">
+	<summary>
+txt_addlimfir_AR1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label92">
+	<summary>
+Label92 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_sip_AR1">
+	<summary>
+dd_sip_AR1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label96">
+	<summary>
+Label96 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_ndp_AR1">
+	<summary>
+dd_ndp_AR1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label82">
+	<summary>
+Label82 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_dwell2">
+	<summary>
+ar_dwell2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_unattStr2">
+	<summary>
+ar_unattStr2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_perEff2">
+	<summary>
+ar_perEff2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_perLiab2">
+	<summary>
+ar_perLiab2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_medpay2">
+	<summary>
+ar_medpay2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_baseprem2">
+	<summary>
+ar_baseprem2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_options2">
+	<summary>
+ar_options2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_fees2">
+	<summary>
+ar_fees2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_tax2">
+	<summary>
+ar_tax2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_total2">
+	<summary>
+ar_total2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label90">
+	<summary>
+Label90 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_aop_AR2">
+	<summary>
+dd_aop_AR2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator27">
+	<summary>
+RequiredFieldValidator27 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label94">
+	<summary>
+Label94 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_hurded_AR2">
+	<summary>
+dd_hurded_AR2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label105">
+	<summary>
+Label105 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_pl_AR2">
+	<summary>
+dd_pl_AR2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label149">
+	<summary>
+Label149 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_mp_AR2">
+	<summary>
+dd_mp_AR2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label115">
+	<summary>
+Label115 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txt_unattstr_AR2">
+	<summary>
+txt_unattstr_AR2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label116">
+	<summary>
+Label116 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txt_pp_AR2">
+	<summary>
+txt_pp_AR2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label117">
+	<summary>
+Label117 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_mhr_AR2">
+	<summary>
+dd_mhr_AR2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label118">
+	<summary>
+Label118 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_rep_AR2">
+	<summary>
+dd_rep_AR2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label119">
+	<summary>
+Label119 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txt_addlimrad_AR2">
+	<summary>
+txt_addlimrad_AR2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label134">
+	<summary>
+Label134 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txt_addlimfir_AR2">
+	<summary>
+txt_addlimfir_AR2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label135">
+	<summary>
+Label135 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_sip_AR2">
+	<summary>
+dd_sip_AR2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label136">
+	<summary>
+Label136 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_ndp_AR2">
+	<summary>
+dd_ndp_AR2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label86">
+	<summary>
+Label86 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_dwell3">
+	<summary>
+ar_dwell3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_unattStr3">
+	<summary>
+ar_unattStr3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_perEff3">
+	<summary>
+ar_perEff3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_perLiab3">
+	<summary>
+ar_perLiab3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_medpay3">
+	<summary>
+ar_medpay3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_baseprem3">
+	<summary>
+ar_baseprem3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_options3">
+	<summary>
+ar_options3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_fees3">
+	<summary>
+ar_fees3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_tax3">
+	<summary>
+ar_tax3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ar_total3">
+	<summary>
+ar_total3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label137">
+	<summary>
+Label137 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_aop_AR3">
+	<summary>
+dd_aop_AR3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.RequiredFieldValidator28">
+	<summary>
+RequiredFieldValidator28 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label138">
+	<summary>
+Label138 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_hurded_AR3">
+	<summary>
+dd_hurded_AR3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label139">
+	<summary>
+Label139 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_pl_AR3">
+	<summary>
+dd_pl_AR3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label150">
+	<summary>
+Label150 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_mp_AR3">
+	<summary>
+dd_mp_AR3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label140">
+	<summary>
+Label140 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txt_unattstr_AR3">
+	<summary>
+txt_unattstr_AR3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label141">
+	<summary>
+Label141 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txt_pp_AR3">
+	<summary>
+txt_pp_AR3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label142">
+	<summary>
+Label142 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_mhr_AR3">
+	<summary>
+dd_mhr_AR3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label143">
+	<summary>
+Label143 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_rep_AR3">
+	<summary>
+dd_rep_AR3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label144">
+	<summary>
+Label144 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txt_addlimrad_AR3">
+	<summary>
+txt_addlimrad_AR3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label145">
+	<summary>
+Label145 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txt_addlimfir_AR3">
+	<summary>
+txt_addlimfir_AR3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label146">
+	<summary>
+Label146 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_sip_AR3">
+	<summary>
+dd_sip_AR3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label147">
+	<summary>
+Label147 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.dd_ndp_AR3">
+	<summary>
+dd_ndp_AR3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label120">
+	<summary>
+Label120 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label121">
+	<summary>
+Label121 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label122">
+	<summary>
+Label122 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label123">
+	<summary>
+Label123 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label124">
+	<summary>
+Label124 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label125">
+	<summary>
+Label125 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label126">
+	<summary>
+Label126 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label127">
+	<summary>
+Label127 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label128">
+	<summary>
+Label128 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label129">
+	<summary>
+Label129 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label130">
+	<summary>
+Label130 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label131">
+	<summary>
+Label131 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label132">
+	<summary>
+Label132 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label133">
+	<summary>
+Label133 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lbl_StFactor">
+	<summary>
+lbl_StFactor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lbl_MkFactor">
+	<summary>
+lbl_MkFactor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.pnlPriorLosses">
+	<summary>
+pnlPriorLosses control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label56">
+	<summary>
+Label56 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblLossDateCaption">
+	<summary>
+lblLossDateCaption control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblLossTypeCaption">
+	<summary>
+lblLossTypeCaption control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblLossDescriptionCaption">
+	<summary>
+lblLossDescriptionCaption control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblLossAmtPaidCaption">
+	<summary>
+lblLossAmtPaidCaption control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblLossStatusCaption">
+	<summary>
+lblLossStatusCaption control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtLoss1Date">
+	<summary>
+txtLoss1Date control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.TextBoxWatermarkExtender3">
+	<summary>
+TextBoxWatermarkExtender3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ddLoss1Type">
+	<summary>
+ddLoss1Type control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtLoss1Description">
+	<summary>
+txtLoss1Description control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtLoss1AmtPaid">
+	<summary>
+txtLoss1AmtPaid control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ddLoss1Status">
+	<summary>
+ddLoss1Status control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtLoss2Date">
+	<summary>
+txtLoss2Date control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.TextBoxWatermarkExtender9">
+	<summary>
+TextBoxWatermarkExtender9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ddLoss2Type">
+	<summary>
+ddLoss2Type control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtLoss2Description">
+	<summary>
+txtLoss2Description control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtLoss2AmtPaid">
+	<summary>
+txtLoss2AmtPaid control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ddLoss2Status">
+	<summary>
+ddLoss2Status control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtLoss3Date">
+	<summary>
+txtLoss3Date control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.TextBoxWatermarkExtender11">
+	<summary>
+TextBoxWatermarkExtender11 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ddLoss3Type">
+	<summary>
+ddLoss3Type control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtLoss3Description">
+	<summary>
+txtLoss3Description control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.txtLoss3AmtPaid">
+	<summary>
+txtLoss3AmtPaid control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.ddLoss3Status">
+	<summary>
+ddLoss3Status control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.btnClosePriorLosses">
+	<summary>
+btnClosePriorLosses control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.PremiumCheckerPanel">
+	<summary>
+PremiumCheckerPanel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label69">
+	<summary>
+Label69 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label71">
+	<summary>
+Label71 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label76">
+	<summary>
+Label76 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label77">
+	<summary>
+Label77 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label78">
+	<summary>
+Label78 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label79">
+	<summary>
+Label79 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label80">
+	<summary>
+Label80 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label73">
+	<summary>
+Label73 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblDwellModTotal_cov">
+	<summary>
+lblDwellModTotal_cov control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblUnAttModTotal_cov">
+	<summary>
+lblUnAttModTotal_cov control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblPerPropModTotal_cov">
+	<summary>
+lblPerPropModTotal_cov control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblPerLiabModTotal_cov">
+	<summary>
+lblPerLiabModTotal_cov control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblMedPayModTotal_cov">
+	<summary>
+lblMedPayModTotal_cov control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblPPRepModTotal_cov">
+	<summary>
+lblPPRepModTotal_cov control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblMHRepModTotal_cov">
+	<summary>
+lblMHRepModTotal_cov control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label75">
+	<summary>
+Label75 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblDwellModTotal_amt">
+	<summary>
+lblDwellModTotal_amt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblUnAttModTotal_amt">
+	<summary>
+lblUnAttModTotal_amt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblPerPropModTotal_amt">
+	<summary>
+lblPerPropModTotal_amt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblPerLiabModTotal_amt">
+	<summary>
+lblPerLiabModTotal_amt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblMedPayModTotal_amt">
+	<summary>
+lblMedPayModTotal_amt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblPPRepModTotal_amt">
+	<summary>
+lblPPRepModTotal_amt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblMHRepModTotal_amt">
+	<summary>
+lblMHRepModTotal_amt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label68">
+	<summary>
+Label68 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblPremModTotal">
+	<summary>
+lblPremModTotal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label70">
+	<summary>
+Label70 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblMGAModTotal">
+	<summary>
+lblMGAModTotal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label72">
+	<summary>
+Label72 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblEMPAModTotal">
+	<summary>
+lblEMPAModTotal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.Label74">
+	<summary>
+Label74 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.lblTotalModTotal">
+	<summary>
+lblTotalModTotal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.quote.PremConfCancel">
+	<summary>
+PremConfCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.Login.RegisterHyperLink">
+	<summary>
+RegisterHyperLink control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:MobileHomeRater.Login.LoginUser">
+	<summary>
+LoginUser control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>
