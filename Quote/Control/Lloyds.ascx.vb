@@ -3881,14 +3881,15 @@ Public Class Lloyds
         Aegisvint_perLiabsc1.Text = dd_pl_Aegisvintsc1.SelectedValue
         Select Case ds.Tables("tbl1").Rows(0).Item("territory").ToString()
             Case "1"
-                If CInt(MHValuelbl.Text) < 25000 Then
+                If CInt(MHValuelbl.Text) <= 24999 Then
                     dd_hurded_Aegisvintsc1.Text = "2500"
+                    dd_wind_Aegisvintsc1.Text = "2000"
                     AegisvintWind.Visible = True
-                    aegisvintageWindhur1.Visible = False
+                    aegisvintageWindhur1.Visible = True
                 Else
                     AegisvintWind.Visible = False
                 End If
-                If CInt(MHValuelbl.Text) > 24999 Then
+                If CInt(MHValuelbl.Text) >= 25000 Then
                     dd_hurded_Aegisvintsc1.Text = "5000"
                     dd_wind_Aegisvintsc1.Text = "2000"
                     AegisvintWind.Visible = True
@@ -3901,8 +3902,8 @@ Public Class Lloyds
                 ' If CInt(MHValuelbl.Text) > 24999 Then
                 dd_hurded_Aegisvintsc1.Text = "5000"
                 dd_wind_Aegisvintsc1.Text = "1000"
-                AegisvintWind.Visible = True
-                aegisvintageWindhur1.Visible = False
+                AegisvintWind.Visible = False
+                aegisvintageWindhur1.Visible = True
                 ' Else
                 'aegiswind2.Visible = False
                 'aegisWindhur2.Visible = False
@@ -3913,8 +3914,8 @@ Public Class Lloyds
                 ' If CInt(MHValuelbl.Text) > 24999 Then
                 dd_hurded_Aegisvintsc1.Text = "5000"
                 dd_wind_Aegisvintsc1.Text = "1000"
-                AegisvintWind.Visible = True
-                aegisvintageWindhur1.Visible = False
+                AegisvintWind.Visible = False
+                aegisvintageWindhur1.Visible = True
                 ' Else
                 'aegiswind2.Visible = False
                 'aegisWindhur2.Visible = False
@@ -4243,13 +4244,18 @@ Public Class Lloyds
         ' dd_pl_aiges2.SelectedValue() = "$" & CInt(ds.Tables("tbl1").Rows(0).Item("LiabilityLimit").ToString().Replace("$", "")).ToString("N0")
         Select Case ds.Tables("tbl1").Rows(0).Item("territory").ToString()
             Case "1"
-                If CInt(MHValuelbl.Text) < 25000 Then
+                If CInt(MHValuelbl.Text) <= 24999 Then
                     dd_hurded_aiges2.Text = "2500"
+                    aegishurrcanded2.Text = "2000"
+                    aegisWindhur2.Visible = True
                     aegiswind2.Visible = True
-                Else
-                    aegiswind2.Visible = False
-                End If
-                If CInt(MHValuelbl.Text) > 24999 Then
+
+                    'dd_hurded_aiges2.Text = "2500"
+                    'aegiswind2.Visible = True
+                    'Else
+                    '    aegiswind2.Visible = False
+
+                ElseIf CInt(MHValuelbl.Text) >= 25000 Then
                     dd_hurded_aiges2.Text = "5000"
                     aegishurrcanded2.Text = "2000"
                     aegisWindhur2.Visible = True
@@ -4588,14 +4594,15 @@ Public Class Lloyds
 
         Select Case ds.Tables("tbl1").Rows(0).Item("territory").ToString()
             Case "1"
-                If CInt(MHValuelbl.Text) < 25000 Then
+                If CInt(MHValuelbl.Text) <= 24999 Then
                     dd_hurded_aiges1.Text = "2500"
+                    aegishurrcanded.Text = "2000"
                     aegisWind.Visible = True
-                    aegisWindhur.Visible = False
+                    aegisWindhur.Visible = True
                     'Else
                     '    aegisWind.Visible = False
                     'End If
-                ElseIf CInt(MHValuelbl.Text) > 24999 Then
+                ElseIf CInt(MHValuelbl.Text) >= 25000 Then
                     dd_hurded_aiges1.Text = "5000"
                     aegishurrcanded.Text = "2000"
                     aegisWindhur.Visible = True
@@ -4605,55 +4612,73 @@ Public Class Lloyds
                     aegisWindhur.Visible = False
                 End If
             Case "2"
-                If CInt(MHValuelbl.Text) > 24999 Then
-                    dd_hurded_aiges1.Text = "5000"
-                    aegishurrcanded.Text = "1000"
-                    aegisWindhur.Visible = True
-                    aegisWind.Visible = False
-                Else
-                    aegisWind.Visible = False
-                    aegisWindhur.Visible = False
+                dd_hurded_aiges1.Text = "5000"
+                aegishurrcanded.Text = "1000"
+                aegisWindhur.Visible = True
+                aegisWind.Visible = False
+
+                'If CInt(MHValuelbl.Text) > 24999 Then
+                '    dd_hurded_aiges1.Text = "5000"
+                '    aegishurrcanded.Text = "1000"
+                '    aegisWindhur.Visible = True
+                '    aegisWind.Visible = False
+                'Else
+                '    aegisWind.Visible = False
+                '    aegisWindhur.Visible = False
 
 
-                End If
+                'End If
             Case "3"
-                If CInt(MHValuelbl.Text) > 24999 Then
-                    dd_hurded_aiges1.Text = "5000"
-                    aegishurrcanded.Text = "1000"
-                    aegisWindhur.Visible = True
-                    aegisWind.Visible = False
-                Else
-                    aegisWind.Visible = False
-                    aegisWindhur.Visible = False
+                dd_hurded_aiges1.Text = "5000"
+                aegishurrcanded.Text = "1000"
+                aegisWindhur.Visible = True
+                aegisWind.Visible = False
 
-                End If
+                'If CInt(MHValuelbl.Text) > 24999 Then
+                '    dd_hurded_aiges1.Text = "5000"
+                '    aegishurrcanded.Text = "1000"
+                '    aegisWindhur.Visible = True
+                '    aegisWind.Visible = False
+                'Else
+                '    aegisWind.Visible = False
+                '    aegisWindhur.Visible = False
+
+                'End If
             Case "4"
                 aegisWind.Visible = False
                 aegisWindhur.Visible = False
             Case "5"
-                If CInt(MHValuelbl.Text) > 24999 Then
-                    dd_hurded_aiges1.Text = "1500"
-                    aegishurrcanded.Text = "1000"
-                    aegisWindhur.Visible = True
-                    aegisWind.Visible = True
-                Else
-                    aegisWind.Visible = False
-                    aegisWindhur.Visible = False
+                dd_hurded_aiges1.Text = "1500"
+                aegishurrcanded.Text = "1000"
+                aegisWindhur.Visible = True
+                aegisWind.Visible = True
 
-
-                End If
+                'If CInt(MHValuelbl.Text) > 24999 Then
+                '    dd_hurded_aiges1.Text = "1500"
+                '    aegishurrcanded.Text = "1000"
+                '    aegisWindhur.Visible = True
+                '    aegisWind.Visible = True
+                'Else
+                '    aegisWind.Visible = False
+                '    aegisWindhur.Visible = False
+                'End If
             Case "6"
-                If CInt(MHValuelbl.Text) > 24999 Then
-                    dd_hurded_aiges1.Text = "1500"
-                    aegishurrcanded.Text = "1500"
-                    aegisWindhur.Visible = True
-                    aegisWind.Visible = True
-                Else
-                    aegisWind.Visible = False
-                    aegisWindhur.Visible = False
+                dd_hurded_aiges1.Text = "1500"
+                aegishurrcanded.Text = "1500"
+                aegisWindhur.Visible = True
+                aegisWind.Visible = True
+
+                'If CInt(MHValuelbl.Text) > 24999 Then
+                '    dd_hurded_aiges1.Text = "1500"
+                '    aegishurrcanded.Text = "1500"
+                '    aegisWindhur.Visible = True
+                '    aegisWind.Visible = True
+                'Else
+                '    aegisWind.Visible = False
+                '    aegisWindhur.Visible = False
 
 
-                End If
+                'End If
         End Select
 
 
