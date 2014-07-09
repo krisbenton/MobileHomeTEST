@@ -8,6 +8,9 @@
     <asp:ContentPlaceHolder ID="head" runat="server" />
     <link href="Styles/MasterStyle.css" rel="stylesheet" type="text/css" />
     <link href="App_Themes/default/MasterStyle.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
     <style type="text/css">
         .style1
         {
