@@ -160,6 +160,7 @@ Public Class quote
             'Check if quote needs to be loaded
             If Request.QueryString("quoteID") <> "" Then '  quoteID is not empty
                 LoadQuote(Request.QueryString("quoteID"))
+                loadAgentSub(Request.QueryString("quoteID"))
                 ' LoadCalcintoDB(Request.QueryString("quoteID"))
             End If
             If priorlosdd.SelectedValue = "Yes" Then
@@ -438,7 +439,8 @@ Public Class quote
                 updateStatus("Quote loaded.")
             Else
                 updateStatus("Quote load failed.")
-            End If
+        End If
+        'Load Agent Sub
     End Sub
     Public Sub LoadAROptions(ByVal quoteID As String)
         Dim ds As System.Data.DataSet
@@ -585,12 +587,14 @@ Public Class quote
     Public Sub savebtn_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles savebtn.Click
         If Request.QueryString("quoteID") <> "" Or Session("beenSaved") = "True" Then
             updateQuote(Request.QueryString("quoteID"))
+            saveAgentSub(Request.QueryString("quoteID"))
             If lblState.Text <> "FL" Then
                 Lloyds1.savePrem(Request.QueryString("quoteID"))
             End If
         Else 'New Quote
             If lblquoteNumber.Text <> "" Then
                 updateQuote(Request.QueryString("quoteID"))
+                saveAgentSub(Request.QueryString("quoteID"))
                 If lblState.Text <> "FL" Then
                     Lloyds1.savePrem(Request.QueryString("quoteID"))
                 End If
@@ -622,6 +626,7 @@ Public Class quote
             Dim tsql As String
             tsql = "UPDATE tblQuotes SET "
             tsql += "term =  '" & termdd.SelectedValue.ToString & "',"
+            tsql += "agencyName =  '" & lblAgency.Text.Replace("'", "''") & "',"
             tsql += "agencyName =  '" & lblAgency.Text.Replace("'", "''") & "',"
             tsql += "agentName =  '" & txtAgConName.Text.Replace("'", "''") & "',"
             tsql += "agentEmail =  '" & txtConEmail.Text & "',"
@@ -700,6 +705,37 @@ Public Class quote
             ASPxPopupControl1.PopupHorizontalAlign = DevExpress.Web.ASPxClasses.PopupHorizontalAlign.Center
             ASPxPopupControl1.ShowOnPageLoad = True
         End If
+    End Sub
+    'sub to save agent Sub number
+    Public Sub saveAgentSub(quoteID)
+        Dim ds As System.Data.DataSet
+        Dim tsql As String = ""
+        Try
+            tsql = "EXEC SaveAgentSub '" & quoteID & "', '" & txtSubNumber.Text & "','" & ddlSub_main.SelectedItem.Text.ToString.Substring(0, 3) & "'"
+            ds = runQueryDS(tsql, "ColonialMHConnectionString")
+        Catch ex As Exception
+            errortrap(tsql, "Saving Agent", ex.Message)
+        End Try
+
+    End Sub
+    'sub to load agent sub
+    Public Sub loadAgentSub(quoteID)
+        Dim ds As System.Data.DataSet
+        Dim tsql As String = ""
+        Try
+
+            tsql = "SELECT a.*, ag.s2cnt,ag.s2email " & _
+            "FROM tblQuotesAgentSub a " & _
+            "LEFT JOIN wrwpaqbx_ColonialWeb.wrwpaqbx_admin.Agents ag ON a.SubNumber = ag.s2sub AND a.AgentID=ag.s2id WHERE a.quoteID = '" & quoteID & "'"
+            ds = runQueryDS(tsql, "ColonialMHConnectionString")
+            If ds.Tables(0).Rows.Count > 0 Then
+                txtSubNumber.Text = ds.Tables(0).Rows(0).Item("SubNumber").ToString
+                txtAgConName.Text = ds.Tables(0).Rows(0).Item("s2cnt").ToString.ToUpper
+                txtConEmail.Text = ds.Tables(0).Rows(0).Item("s2email").ToString.ToUpper
+            End If
+        Catch ex As Exception
+            errortrap(tsql, "Loading Agent", ex.Message)
+        End Try
     End Sub
     'Update Lloyds Quote Premiums
     Public Sub updateLloydsQuote(ByVal quoteID As String)
@@ -805,6 +841,8 @@ Public Class quote
                 If ds1.Tables(0).Rows.Count > 0 Then
                     lblquoteNumber.Text = ds1.Tables(0).Rows(0).Item("quoteID").ToString
                     updateQuote(ds1.Tables(0).Rows(0).Item("quoteID").ToString)
+                    'Save Agent Sub
+                    saveAgentSub(ds1.Tables(0).Rows(0).Item("quoteID").ToString)
                 Else
                     Dim effdate As String
                     Dim efdate As Date
@@ -881,11 +919,13 @@ Public Class quote
                     tsql += " '" & txtquotennotes.Text.Replace("'", "''") & "',"
                     tsql += " '" & mySession.CurrentUser.ID.ToString & "'"
                     tsql += " )"
+
                     Try
                         ds = runQueryDS(tsql, "ColonialMHConnectionString")
                         ds = runQueryDS("SELECT TOP 1 quoteID FROM tblQuotes ORDER BY quoteID DESC", "ColonialMHConnectionString")
                         If ds.Tables(0).Rows.Count > 0 Then
                             lblquoteNumber.Text = ds.Tables(0).Rows(0).Item("quoteID").ToString
+                            saveAgentSub(ds.Tables(0).Rows(0).Item("quoteID").ToString)
                             'Save Lloyds Rate Date
                             If Lloyds_Dwell.Text <> "0.00" Then
                                 If saveLloydsPrem(ds.Tables(0).Rows(0).Item("quoteID").ToString) Then
