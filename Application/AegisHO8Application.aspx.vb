@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Imports DevExpress.Web.ASPxEditors
-Public Class AigesApplicationHO8
+Public Class AegisApplicationHO8
     Inherits System.Web.UI.Page
     Dim com As New Common
     Dim quoteID As String

@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="Aegis Application" Language="vb" AutoEventWireup="false" MasterPageFile="~/IntPage.Master"
-    CodeBehind="AigesHO8Application.aspx.vb" Inherits="MobileHomeRater.AigesApplicationHO8" %>
+    CodeBehind="AegisHO8Application.aspx.vb" Inherits="MobileHomeRater.AegisApplicationHO8" %>
 
 <%@ Register Assembly="DevExpress.Web.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dx" %>

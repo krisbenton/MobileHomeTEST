@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class AigesApplicationHO8
+Partial Public Class AegisApplicationHO8
 
     '''<summary>
     '''savebtn control.
@@ -1589,258 +1589,6 @@ Partial Public Class AigesApplicationHO8
     Protected WithEvents ddUnitType As Global.DevExpress.Web.ASPxEditors.ASPxComboBox
 
     '''<summary>
-    '''Label74 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label74 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''txtLien1Name control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtLien1Name As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Label64 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label64 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''billLienholder control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents billLienholder As Global.DevExpress.Web.ASPxEditors.ASPxComboBox
-
-    '''<summary>
-    '''Label75 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label75 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''txtLien1Num control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtLien1Num As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Label76 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label76 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''txtLien1Addr control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtLien1Addr As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Label79 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label79 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''txtLien1Zip control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtLien1Zip As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''lienzip1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lienzip1 As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''Label77 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label77 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''txtLien1City control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtLien1City As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Label78 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label78 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''txtLien1State control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtLien1State As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Label80 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label80 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''txtLien2Name control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtLien2Name As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Label81 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label81 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''txtLien2Num control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtLien2Num As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Label82 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label82 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''txtLien2Addr control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtLien2Addr As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Label85 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label85 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''txtLien2Zip control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtLien2Zip As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''lienzip2 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lienzip2 As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''Label83 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label83 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''txtLien2City control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtLien2City As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Label84 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label84 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''txtLien2State control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtLien2State As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
     '''Label69 control.
     '''</summary>
     '''<remarks>
@@ -2127,6 +1875,258 @@ Partial Public Class AigesApplicationHO8
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtLoss3AmtPaid As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Label74 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label74 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''txtLien1Name control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtLien1Name As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Label64 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label64 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''billLienholder control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents billLienholder As Global.DevExpress.Web.ASPxEditors.ASPxComboBox
+
+    '''<summary>
+    '''Label75 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label75 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''txtLien1Num control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtLien1Num As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Label76 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label76 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''txtLien1Addr control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtLien1Addr As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Label79 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label79 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''txtLien1Zip control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtLien1Zip As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''lienzip1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lienzip1 As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Label77 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label77 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''txtLien1City control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtLien1City As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Label78 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label78 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''txtLien1State control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtLien1State As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Label80 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label80 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''txtLien2Name control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtLien2Name As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Label81 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label81 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''txtLien2Num control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtLien2Num As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Label82 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label82 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''txtLien2Addr control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtLien2Addr As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Label85 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label85 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''txtLien2Zip control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtLien2Zip As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''lienzip2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lienzip2 As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Label83 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label83 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''txtLien2City control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtLien2City As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Label84 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label84 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''txtLien2State control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtLien2State As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''dd_ARIng1 control.
