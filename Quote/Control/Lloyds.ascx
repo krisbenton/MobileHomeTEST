@@ -343,6 +343,24 @@ function AR_UpdateOptions() {
 
                 }
             }
+            // Aegis HO8
+            if (section == 14) {
+                if (document.getElementById('AegisHO8_ShowOptions').innerText == "+ Show Options") {
+
+                    document.getElementById('<%= AegisHO8_Options.ClientID%>').style.display = '';
+                    document.getElementById('<%= AegisHO8_OptionsTable.ClientID%>').style.display = '';
+                    document.getElementById('<%= AegisHO8_ShowOptionsHidden.ClientID%>').value = '- Show Options';
+                    document.getElementById('AegisHO8_ShowOptions').innerText = "- Show Options";
+
+                }
+                else {
+                    document.getElementById('<%= AegisHO8_Options.ClientID %>').style.display = 'none';
+                    document.getElementById('<%= AegisHO8_OptionsTable.ClientID %>').style.display = 'none';
+                    document.getElementById('<%= AegisHO8_ShowOptionsHidden.ClientID%>').value = '+ Show Options';
+                    document.getElementById('AegisHO8_ShowOptions').innerText = "+ Show Options";
+
+                }
+            }
         }
 </script>
    
@@ -4845,6 +4863,325 @@ function AR_UpdateOptions() {
                                             </tr>
 
                                          <%--Aegis Vintage End--%>
+
+
+
+                                                                  <%-- Aegis HO8 Start--%>
+                                         <tr id="AegisHO8_RootRow" runat="server" visible="true" style="border: 1px solid black;">
+                                                <td align="center" style="border: 1px solid" width="251px">
+                                                    <label id="AegisHO8_ShowOptions" runat="server" style="color: Blue; cursor: pointer;"
+                                                        onclick="AROptionsShow(14);" clientidmode="Static">
+                                                        - Show Options</label>
+                                                    <asp:HiddenField ID="AegisHO8_ShowOptionsHidden" runat="server" Value="+ Show Options" />
+                                                </td>
+                                                <td align="center" style="border: 1px solid">
+                                                    <asp:Label ID="Label187" runat="server" Text="Aegis HO8" CssClass="labelCov" />
+                                                </td>
+                                                <td align="center" style="border: 1px solid">
+                                                    <asp:Label ID="Label189" runat="server" Text="0.00" CssClass="labelCov" />
+                                                </td>
+                                                <td align="center" style="border: 1px solid" class="style3">
+                                                    <asp:Label ID="Label191" runat="server" Text="0.00" CssClass="labelCov" />
+                                                </td>
+                                                <td align="center" style="border: 1px solid">
+                                                    <asp:Label ID="Label193" runat="server" Text="0.00" CssClass="labelCov" />
+                                                </td>
+                                                <td align="center" style="border: 1px solid;">
+                                                    <asp:Label ID="Label194" runat="server" Text="0.00" CssClass="labelCov" />
+                                                </td>
+                                                <td align="center" style="border: 1px solid">
+                                                    <asp:Label ID="Label195" runat="server" Text="0.00" CssClass="labelCov" />
+                                                </td>
+                                                <td align="center" style="border: 1px solid">
+                                                    <asp:Label ID="Label196" runat="server" Text="0.00" CssClass="labelCov" />
+                                                </td>
+                                                <td align="center" style="border: 1px solid">
+                                                    <asp:Label ID="Label197" runat="server" Text="0.00" CssClass="labelCov" />
+                                                </td>
+                                                <td align="center" style="border: 1px solid">
+                                                    <asp:Label ID="Label198" runat="server" Text="$0.00" CssClass="labelCov" />
+                                                </td>
+                                                <td align="center" style="border: 1px solid">
+                                                    <asp:Label ID="Label199" runat="server" Text="0.00" CssClass="labelCov" />
+                                                </td>
+                                                <td align="center" style="border: 1px solid">
+                                                    <asp:Label ID="Label200" runat="server" Text="0.00" CssClass="labelTotal" />
+                                                </td>
+                                                <td align="center" style="border: 1px solid">
+                                                    <asp:Button ID="Button11" runat="server" OnClick="selectAegisvint1btnsc1_Click" Text="Select" />
+                                                </td>
+                                            </tr>
+                                            <tr id="AegisHO8_Options" runat="server" clientidmode="Static">
+                                                <td colspan="13">
+                                                    <table id="AegisHO8_OptionsTable" runat="server" width="auto" cellpadding="0" cellspacing="0"
+                                                        clientidmode="Static" bgcolor="white" title="AR Options">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <input id="AegisHO8_OpenCalcDetails" type="button" value="Open Calc Detail"  />
+                                                                    <asp:Label ID="Label201" runat="server" Text="0.00" CssClass="label" Style="display:none" />
+                                                                    &nbsp;
+                                                                    <asp:Label ID="Label202" runat="server" Text="0.00" CssClass="label" Style="display:none" />
+                                                                    <asp:Label ID="Label203" runat="server" Text="0.00" CssClass="label" Style="display:none" />
+                                                                    &nbsp;
+                                                                    <dx:ASPxPopupControl ID="AegisHO8_CalcDetailsPopup" runat="server" PopupElementID="AegisHO8_OpenCalcDetails" HeaderText="Standard Calculations" PopupVerticalAlign="Below" PopupHorizontalAlign="LeftSides" AllowDragging="True"
+                                                                          MaxWidth="800px" MaxHeight="1800px" MinHeight="150px" MinWidth="150px" ShowFooter="True" Width="250px" Height="130px" >
+                                                                    <ContentCollection>
+                                                                        <dx:PopupControlContentControl ID="PopupControlContentControl15" runat="server">
+                                                                            <asp:Panel ID="Panel14" runat="server">
+                                                                                <table border="0" cellpadding="4" cellspacing="0">
+                                                                                    <tr>
+                                                                                        <td valign="top">
+                                                                                            
+                                                                                            <asp:Label ID="AegisHO8_CalcDetails" runat="server" ClientIDMode="Static" Text=""></asp:Label>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                  
+                                                                                </table>
+                                                                            </asp:Panel>
+                                                                        </dx:PopupControlContentControl>
+                                                                    </ContentCollection>
+
+                                                                    </dx:ASPxPopupControl>
+                                                                </td>
+                                                            </tr>
+
+                                                            
+                                                              <tr>
+                                                                <td align="left">
+                                                                    <asp:Label ID="AegisHO8_IncreasedOtherStructuresLabel" runat="server" Text="Increased Other Structures:  " CssClass="label" />
+                                                                    &nbsp
+                                                                </td>
+                                                                <td align="left">
+                                                                    <asp:TextBox ID="AegisHO8_IncreasedOtherStructures" runat="server" Text="0.00" AutoCompleteType="DisplayName"
+                                                                        Casing="UPPER" ToolTip="Personal Property" Width="65" TabIndex="118" />
+                                                                    &nbsp;<asp:Label ID="AegisHO8_IncreasedOtherStructuresAmount" runat="server" Text="0.00" CssClass="label" />
+                                                                    &nbsp;
+                                                                </td>
+                                                            </tr>
+
+                                                            
+                                                              <tr>
+                                                                <td align="left">
+                                                                    <asp:Label ID="AegisHO8_PPReplacementCostLabel" runat="server" Text="Personal Property Replacement Cost:  " CssClass="label" />
+                                                                    &nbsp
+                                                                </td>
+                                                                <td align="left">
+                                                                    <asp:DropDownList ID="AegisHO8_PPReplacementCost" runat="server" TabIndex="120" 
+                                                                        ClientIDMode="Static">
+                                                                        <asp:ListItem>No</asp:ListItem>
+                                                                        <asp:ListItem>Yes</asp:ListItem>
+                                                                    </asp:DropDownList>
+                                                                    &nbsp;
+                                                                    <asp:Label ID="AegisHO8_PPReplacementCostAmount" runat="server" Text="0.00" CssClass="label" />
+                                                                    &nbsp;
+                                                                </td>
+                                                            </tr>
+
+                                                             <tr>
+                                                                <td align="left">
+                                                                    <asp:Label ID="Label209" runat="server" Text="Personal Liability:  " CssClass="label" />
+                                                                    &nbsp
+                                                                </td>
+                                                                <td align="left">
+                                                                    <asp:DropDownList ID="AegisHO8_PersonalLiability" runat="server" AutoPostBack="true" 
+                                                                        TabIndex="115" >
+                                                                       <asp:ListItem>$25,000</asp:ListItem>
+                                                                       <asp:ListItem>$50,000</asp:ListItem>
+                                                                       <asp:ListItem>$100,000</asp:ListItem>
+                                                                       <asp:ListItem>$200,000</asp:ListItem>
+                                                                        <asp:ListItem>$300,000</asp:ListItem>
+                                                                    </asp:DropDownList>
+                                                                    &nbsp;<asp:Label ID="AegisHO8_PersonalLiabilityAmount" runat="server" Text="0.00" CssClass="label" />
+                                                                    &nbsp;
+                                                                </td>
+                                                            </tr>
+
+                                                                                                          <tr id="AegisHO8_MedicalPaymentRow" style="display: " clientidmode="Static">
+                                                                <td align="left">
+                                                                    <asp:Label ID="Label211" runat="server" Text="Medical payment:  " CssClass="label" />
+                                                                    &nbsp
+                                                                </td>
+                                                                <td align="left">
+                                                                    <asp:DropDownList ID="AegisHO8_MedicalPayment" runat="server"  clientidmode="Static" 
+                                                                        TabIndex="116">                                                                                                                                          
+                                                                        <asp:ListItem>$1000</asp:ListItem>
+                                                                        <asp:ListItem>$2000</asp:ListItem>
+                                                                    </asp:DropDownList>
+                                                                     &nbsp;
+                                                                    <asp:Label ID="AegisHO8_MedicalPaymentAmount" runat="server" Text="0.00" CssClass="label" />
+                                                                    &nbsp;
+                                                                </td>
+                                                            </tr>
+
+                                                            
+                                                             <tr>
+                                                                <td align="left">
+                                                                    <asp:Label ID="AegisHO8_WindHailLabel" runat="server" Text="Wind\Hail\Tornado Deductible:  " CssClass="label" />
+                                                                    &nbsp
+                                                                </td>
+                                                                <td align="left">
+                                                                    <asp:DropDownList ID="AegisHO8_WindHail" runat="server" TabIndex="120" 
+                                                                        ClientIDMode="Static">
+                                                                        <asp:ListItem>1%</asp:ListItem>
+                                                                        <asp:ListItem>2%</asp:ListItem>
+                                                                        <asp:ListItem>3%</asp:ListItem>
+
+                                                                    </asp:DropDownList>
+                                                                    &nbsp;
+                                                                    <asp:Label ID="AegisHO8_WindHailAmount" runat="server" Text="0.00" CssClass="label" />
+                                                                    &nbsp;
+                                                                </td>
+                                                            </tr> 
+
+                                                                            <tr>
+                                                                <td align="left">
+                                                                    <asp:Label ID="AegisHO8_TheftCoverageOnPremisesLabel" runat="server" Text="Increased Theft Coverage (on premises):  " CssClass="label" />
+                                                                    &nbsp
+                                                                </td>
+                                                                <td align="left">
+                                                                    <asp:DropDownList ID="AegisHO8_TheftCoverageOnPremises" AutoPostBack="true" runat="server" TabIndex="120"
+                                                                        ClientIDMode="Static" OnSelectedIndexChanged="AegisHO8_TheftCoverageOnPremises_SelectedIndexChanged">
+                                                                        <asp:ListItem></asp:ListItem>
+                                                                        <asp:ListItem Value="3000">$3,000</asp:ListItem>
+                                                                        <asp:ListItem Value="5000">$5,000</asp:ListItem>
+                                                                    </asp:DropDownList>
+                                                                    &nbsp;
+                                                                    <asp:Label ID="AegisHO8_TheftCoverageOnPremisesAmount" runat="server" Text="0.00" CssClass="label" />
+                                                                    &nbsp;
+                                                                </td>
+                                                            </tr>
+
+                                                            
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <asp:Label ID="AegisHO8_TheftCoverageOffPremisesLabel" runat="server" Text="Increased Theft Coverage (off premises):  " CssClass="label" />
+                                                                    &nbsp
+                                                                </td>
+                                                                <td align="left">
+                                                                    <asp:DropDownList ID="AegisHO8_TheftCoverageOffPremises" Enabled="false" AutoPostBack="true" runat="server" TabIndex="120"
+                                                                        ClientIDMode="Static" >
+                                                                        <asp:ListItem Value="Yes">Yes</asp:ListItem>
+                                                                        <asp:ListItem Value="No">No</asp:ListItem>
+                                                                    </asp:DropDownList>
+                                                                </td>
+                                                            </tr>
+
+                                                            
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <asp:Label ID="AegisHO8_GolfCartCoverageLabel" runat="server" Text="Golf Cart Coverage:  " CssClass="label" />
+                                                                    &nbsp
+                                                                </td>
+                                                                <td align="left">
+                                                                    <asp:DropDownList ID="AegisHO8_GolfCartCoverage" runat="server" TabIndex="120"
+                                                                        ClientIDMode="Static">
+                                                                        <asp:ListItem Value="WithCollision">With collision</asp:ListItem>
+                                                                        <asp:ListItem Value="WithoutCollision">Without collision</asp:ListItem>
+                                                                    </asp:DropDownList>
+                                                                    &nbsp;
+                                                                    <asp:Label ID="AegisHO8_GolfCartCoverageAmount" runat="server" Text="0.00" CssClass="label" />
+                                                                    &nbsp;
+                                                                </td>
+                                                            </tr>
+
+      <%--                                                      <tr>
+                                                                <td align="left">
+                                                                    <asp:Label ID="Label205" runat="server" Text="AOP Deductible" CssClass="label" />
+                                                                </td>
+                                                                <td align="left">
+                                                                    <asp:DropDownList ID="DropDownList1" runat="server" TabIndex="112">
+                                                                        <asp:ListItem>$500</asp:ListItem>
+                                                                  
+                                                                    </asp:DropDownList>
+                                                                     &nbsp;<asp:Label ID="Label206" runat="server" Text="0.00" CssClass="label" />
+                                                                    &nbsp;
+                                                                </td>
+                                                            </tr>--%>
+                       <%--                                     <tr id="Tr10" runat="server">
+                                                                <td align="left">
+                                                                    <asp:Label ID="Label207" runat="server" Text="Named Storm Deductible" CssClass="label" />
+                                                                </td>
+                                                                <td align="left">
+                                                                    <asp:TextBox ID="TextBox1" runat="server" Text="0.00" 
+                                                                        AutoCompleteType="DisplayName" Enabled="false" TabIndex="113" />
+                                                                </td>
+                                                            </tr>--%>
+
+    <%--                                                        <tr id="Tr11" runat="server">
+                                                                <td align="left">
+                                                                    <asp:Label ID="Label208" runat="server" Text="Wind\Hail\Tornado Deductible" CssClass="label" />
+                                                                </td>
+                                                                <td align="left">
+                                                                    <asp:TextBox ID="TextBox2" runat="server" Text="0.00" 
+                                                                        AutoCompleteType="DisplayName" Enabled="false" TabIndex="113" />
+                                                                </td>
+                                                            </tr>--%>
+   
+                                                           
+                                                   <%--         <tr>
+                                                                <td>
+                                                                    &nbsp;
+                                                                </td>
+                                                            </tr>--%>
+           
+              
+                                                            
+                                                            
+                                                           <%-- <tr>
+                                                                <td>
+                                                                    &nbsp;
+                                                                </td>
+                                                            </tr>--%>
+<%--                                                            <tr>
+                                                                <td align="left">
+                                                                    <asp:Label ID="Label213" runat="server" Text="Other Structures:  " CssClass="label" />
+                                                                    &nbsp
+                                                                </td>
+                                                                <td align="left">
+                                                                    <asp:TextBox ID="TextBox3" runat="server" Text="0.00" AutoCompleteType="DisplayName"
+                                                                        Casing="UPPER" ToolTip="Unattached Structure" Width="65" TabIndex="117"/>
+                                                                    &nbsp;<asp:Label ID="Label214" runat="server" Text="0.00" CssClass="label" />
+                                                                    &nbsp;
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <asp:Label ID="Label215" runat="server" Text="Contents:  " CssClass="label" />
+                                                                    &nbsp
+                                                                </td>
+                                                                <td align="left">
+                                                                    <asp:TextBox ID="TextBox4" runat="server" Text="0.00" AutoCompleteType="DisplayName"
+                                                                        Casing="UPPER" ToolTip="Personal Property" Width="65" TabIndex="118" />
+                                                                    &nbsp;<asp:Label ID="Label216" runat="server" Text="0.00" CssClass="label" />
+                                                                    &nbsp;
+                                                                </td>
+                                                            </tr>--%>
+
+
+
+
+
+
+                                            
+
+
+
+
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <asp:Button ID="AegisHO8_UpdateOptionalCoverages" runat="server" Text="Update Optional Coverages"
+                                                                         TabIndex="22" />
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+
+                                         <%--Aegis HO8 End--%>
+
+
                                                 <tr id="AR_Ineligible" style="border: 1px solid black; display: none">
                                                     <td align="center" colspan="12" style="border: 1px solid">
                                                         <label id="AR_Errlbl" style="font-size: larger">
