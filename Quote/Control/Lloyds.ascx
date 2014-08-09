@@ -4986,6 +4986,7 @@ function AR_UpdateOptions() {
                                                                 <td align="left">
                                                                     <asp:DropDownList ID="AegisHO8_PersonalLiability" runat="server" AutoPostBack="true" 
                                                                         TabIndex="115" >
+                                                                        <asp:ListItem Value=""></asp:ListItem>
                                                                        <asp:ListItem>$25,000</asp:ListItem>
                                                                        <asp:ListItem>$50,000</asp:ListItem>
                                                                        <asp:ListItem>$100,000</asp:ListItem>
@@ -5004,7 +5005,8 @@ function AR_UpdateOptions() {
                                                                 </td>
                                                                 <td align="left">
                                                                     <asp:DropDownList ID="AegisHO8_MedicalPayment" runat="server"  clientidmode="Static" 
-                                                                        TabIndex="116">                                                                                                                                          
+                                                                        TabIndex="116">  
+                                                                        <asp:ListItem Value=""></asp:ListItem>                                                                                                                                        
                                                                         <asp:ListItem>$1000</asp:ListItem>
                                                                         <asp:ListItem>$2000</asp:ListItem>
                                                                     </asp:DropDownList>
@@ -5059,7 +5061,7 @@ function AR_UpdateOptions() {
                                                                     &nbsp
                                                                 </td>
                                                                 <td align="left">
-                                                                    <asp:DropDownList ID="AegisHO8_TheftCoverageOffPremises" Enabled="false" AutoPostBack="true" runat="server" TabIndex="120"
+                                                                    <asp:DropDownList ID="AegisHO8_TheftCoverageOffPremises" Enabled="false"  runat="server" TabIndex="120"
                                                                         ClientIDMode="Static" >
                                                                         <asp:ListItem Value="Yes">Yes</asp:ListItem>
                                                                         <asp:ListItem Value="No">No</asp:ListItem>
@@ -5074,8 +5076,8 @@ function AR_UpdateOptions() {
                                                                     &nbsp
                                                                 </td>
                                                                 <td align="left">
-                                                                    <asp:DropDownList ID="AegisHO8_GolfCartCoverage" runat="server" TabIndex="120"
-                                                                        ClientIDMode="Static">
+                                                                    <asp:DropDownList ID="AegisHO8_GolfCartCoverage" runat="server" TabIndex="120" ClientIDMode="Static">
+                                                                        <asp:ListItem Value=""></asp:ListItem>  
                                                                         <asp:ListItem Value="WithCollision">With collision</asp:ListItem>
                                                                         <asp:ListItem Value="WithoutCollision">Without collision</asp:ListItem>
                                                                     </asp:DropDownList>

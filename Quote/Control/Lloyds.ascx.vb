@@ -5871,7 +5871,8 @@ Public Class Lloyds
 
             End If
 
-
+            Dim ho8Rules As AegisHo8Rules = New AegisHo8Rules(Me)
+            ho8Rules.SaveData(cmd)
 
             Try
                 Dim ds As Data.DataSet = New Data.DataSet
@@ -6203,6 +6204,10 @@ Public Class Lloyds
                 dd_pool.SelectedValue = ds.Tables("tbl1").Rows(0).Item("PackSwim").ToString()
                 dd_pool_amt.Text = ds.Tables("tbl1").Rows(0).Item("PackSwimPrem").ToString()
             End If
+
+            'Load HO8 data
+            Dim ho8Rules As AegisHo8Rules = New AegisHo8Rules(Me)
+            ho8Rules.LoadData(ds)
 
             calcAegis()
 
@@ -10694,6 +10699,7 @@ Public Class Lloyds
     End Sub
     'End General Finance Section
 
+#Region "ProgramRules"
 
     Public Class ProgramRules
 
@@ -10702,7 +10708,6 @@ Public Class Lloyds
         Public Sub New(parent As Lloyds)
             _parent = parent
         End Sub
-
 
         Public Overridable Sub ProcessProgram()
 
@@ -10721,8 +10726,8 @@ Public Class Lloyds
             Return True
         End Function
 
-
     End Class
+#End Region
 
 #Region "AegisHo8Rules"
 
@@ -10767,41 +10772,45 @@ Public Class Lloyds
                 total = basePremium
 
                 'Medical Payment $1,000 (Incl $0) or $2,000 ($3)
-                calcDetails.Append("<tr align=left><td>Medical Payment</td>")
-                calcDetails.Append("<td>$")
-                If Parent.AegisHO8_MedicalPayment.SelectedValue = "$1000" Then
-                    Parent.AegisHO8_MedicalPaymentAmount.Text = "0"
-                    calcDetails.Append(0)
-                ElseIf Parent.AegisHO8_MedicalPayment.SelectedValue = "$2000" Then
-                    Parent.AegisHO8_MedicalPaymentAmount.Text = "3"
-                    calcDetails.Append(3)
-                    total += 3
+                If Parent.AegisHO8_MedicalPayment.SelectedValue <> "" Then
+                    calcDetails.Append("<tr align=left><td>Medical Payment</td>")
+                    calcDetails.Append("<td>$")
+                    If Parent.AegisHO8_MedicalPayment.SelectedValue = "$1000" Then
+                        Parent.AegisHO8_MedicalPaymentAmount.Text = "0"
+                        calcDetails.Append(0)
+                    ElseIf Parent.AegisHO8_MedicalPayment.SelectedValue = "$2000" Then
+                        Parent.AegisHO8_MedicalPaymentAmount.Text = "3"
+                        calcDetails.Append(3)
+                        total += 3
+                    End If
+                    calcDetails.Append("</td></tr>")
                 End If
-                calcDetails.Append("</td></tr>")
 
                 'Personal Liability $25,000 (-$11), $50,000 (-$6), $100,000 (Incl $0), $200,000 ($5), $300,000 ($8)
-                calcDetails.Append("<tr align=left><td>Personal Liability</td>")
-                calcDetails.Append("<td>$")
-                If Parent.AegisHO8_PersonalLiability.SelectedValue = "$25,000" Then
-                    Parent.AegisHO8_PersonalLiabilityAmount.Text = "-11"
-                    calcDetails.Append(-11)
-                    total -= 11
-                ElseIf Parent.AegisHO8_PersonalLiability.SelectedValue = "$50,000" Then
-                    Parent.AegisHO8_PersonalLiabilityAmount.Text = "-6"
-                    calcDetails.Append(-6)
-                    total -= 6
-                ElseIf Parent.AegisHO8_PersonalLiability.SelectedValue = "$100,000" Then
+                If Parent.AegisHO8_PersonalLiability.SelectedValue <> "" Then
+                    calcDetails.Append("<tr align=left><td>Personal Liability</td>")
+                    calcDetails.Append("<td>$")
+                    If Parent.AegisHO8_PersonalLiability.SelectedValue = "$25,000" Then
+                        Parent.AegisHO8_PersonalLiabilityAmount.Text = "-11"
+                        calcDetails.Append(-11)
+                        total -= 11
+                    ElseIf Parent.AegisHO8_PersonalLiability.SelectedValue = "$50,000" Then
+                        Parent.AegisHO8_PersonalLiabilityAmount.Text = "-6"
+                        calcDetails.Append(-6)
+                        total -= 6
+                    ElseIf Parent.AegisHO8_PersonalLiability.SelectedValue = "$100,000" Then
 
-                ElseIf Parent.AegisHO8_PersonalLiability.SelectedValue = "$200,000" Then
-                    Parent.AegisHO8_PersonalLiabilityAmount.Text = "5"
-                    calcDetails.Append(5)
-                    total += 5
-                ElseIf Parent.AegisHO8_PersonalLiability.SelectedValue = "$300,000" Then
-                    Parent.AegisHO8_PersonalLiabilityAmount.Text = "8"
-                    calcDetails.Append(8)
-                    total += 8
+                    ElseIf Parent.AegisHO8_PersonalLiability.SelectedValue = "$200,000" Then
+                        Parent.AegisHO8_PersonalLiabilityAmount.Text = "5"
+                        calcDetails.Append(5)
+                        total += 5
+                    ElseIf Parent.AegisHO8_PersonalLiability.SelectedValue = "$300,000" Then
+                        Parent.AegisHO8_PersonalLiabilityAmount.Text = "8"
+                        calcDetails.Append(8)
+                        total += 8
+                    End If
+                    calcDetails.Append("</td></tr>")
                 End If
-                calcDetails.Append("</td></tr>")
 
                 'Personal Property Replacement Cost
                 If Parent.AegisHO8_PPReplacementCost.SelectedValue = "Yes" Then
@@ -10831,18 +10840,20 @@ Public Class Lloyds
                 calcDetails.Append("</td></tr>")
 
                 ' Golf Cart Coverage - $12 with collision or $7 without collision
-                calcDetails.Append("<tr align=left><td>Golf Cart Coverage</td>")
-                calcDetails.Append("<td>$")
-                Dim golfCart As Decimal = 0
-                If Parent.AegisHO8_GolfCartCoverage.SelectedValue = "WithCollision" Then
-                    golfCart += 12
-                ElseIf Parent.AegisHO8_GolfCartCoverage.SelectedValue = "WithoutCollision" Then
-                    golfCart += 7
+                If Parent.AegisHO8_GolfCartCoverage.SelectedValue <> "" Then
+                    calcDetails.Append("<tr align=left><td>Golf Cart Coverage</td>")
+                    calcDetails.Append("<td>$")
+                    Dim golfCart As Decimal = 0
+                    If Parent.AegisHO8_GolfCartCoverage.SelectedValue = "WithCollision" Then
+                        golfCart += 12
+                    ElseIf Parent.AegisHO8_GolfCartCoverage.SelectedValue = "WithoutCollision" Then
+                        golfCart += 7
+                    End If
+                    calcDetails.Append(golfCart)
+                    total += golfCart
+                    Parent.AegisHO8_GolfCartCoverageAmount.Text = windHail
+                    calcDetails.Append("</td></tr>")
                 End If
-                calcDetails.Append(golfCart)
-                total += golfCart
-                Parent.AegisHO8_GolfCartCoverageAmount.Text = windHail
-                calcDetails.Append("</td></tr>")
 
                 ' Increase Theft Coverage - $19/$2000 on premises or $10 off premises
                 If Parent.AegisHO8_TheftCoverageOnPremises.SelectedValue <> "" Then
@@ -10875,156 +10886,83 @@ Public Class Lloyds
                 Parent.errortrap("Geting Calculation data ", "Calculation Aegis HO8", ex.Message)
             End Try
 
+        End Sub
+
+#End Region
+
+#Region "LoadData"
+
+        Public Sub LoadData(ds As DataSet)
+            If Not ds.Tables(0).Rows(0).IsNull("HO8IOS") Then
+                Parent.AegisHO8_IncreasedOtherStructures.Text = ds.Tables(0).Rows(0).Item("HO8IOS")
+            End If
+            If Not ds.Tables(0).Rows(0).IsNull("HO8PPR") Then
+                Parent.AegisHO8_PPReplacementCost.SelectedValue = ds.Tables(0).Rows(0).Item("HO8PPR")
+            End If
+            If Not ds.Tables(0).Rows(0).IsNull("HO8PL") Then
+                Parent.AegisHO8_PersonalLiability.SelectedValue = ds.Tables(0).Rows(0).Item("HO8PL")
+            End If
+            If Not ds.Tables(0).Rows(0).IsNull("HO8MP") Then
+                Parent.AegisHO8_MedicalPayment.SelectedValue = ds.Tables(0).Rows(0).Item("HO8MP")
+            End If
+            If Not ds.Tables(0).Rows(0).IsNull("HO8WHD") Then
+                Parent.AegisHO8_WindHail.SelectedValue = ds.Tables(0).Rows(0).Item("HO8WHD")
+            End If
+            If Not ds.Tables(0).Rows(0).IsNull("HO8ITC") Then
+                Dim itc As String = ds.Tables(0).Rows(0).Item("HO8ITC")
+                Dim parts As String() = itc.Split(",")
+                Parent.AegisHO8_TheftCoverageOnPremises.SelectedValue = parts(0)
+                Parent.AegisHO8_TheftCoverageOffPremises.SelectedValue = parts(1)
+            End If
+            If Not ds.Tables(0).Rows(0).IsNull("HO8GCC") Then
+                Parent.AegisHO8_GolfCartCoverage.SelectedValue = ds.Tables(0).Rows(0).Item("HO8GCC")
+            End If
+
+            ProcessTheftCoverageChange()
+
+        End Sub
+
+#End Region
+
+#Region "SaveData"
+
+        Public Sub SaveData(cmd As SqlCommand)
+            cmd.Parameters.Add("@HO8IOS", SqlDbType.VarChar, 50).Value = Parent.AegisHO8_IncreasedOtherStructures.Text
+            cmd.Parameters.Add("@HO8PPR", SqlDbType.VarChar, 50).Value = Parent.AegisHO8_PPReplacementCost.SelectedValue
+
+            If Parent.AegisHO8_PersonalLiability.SelectedValue = "" Then
+                cmd.Parameters.Add("@HO8PL", SqlDbType.VarChar, 50).Value = Nothing
+            Else
+                cmd.Parameters.Add("@HO8PL", SqlDbType.VarChar, 50).Value = Parent.AegisHO8_PersonalLiability.SelectedValue
+            End If
+
+            If Parent.AegisHO8_MedicalPayment.SelectedValue = "" Then
+                cmd.Parameters.Add("@HO8MP", SqlDbType.VarChar, 50).Value = Nothing
+            Else
+                cmd.Parameters.Add("@HO8MP", SqlDbType.VarChar, 50).Value = Parent.AegisHO8_MedicalPayment.SelectedValue
+            End If
+
+            cmd.Parameters.Add("@HO8WHD", SqlDbType.VarChar, 50).Value = Parent.AegisHO8_WindHail.SelectedValue
+            If Parent.AegisHO8_TheftCoverageOnPremises.SelectedValue = "" Then
+                cmd.Parameters.Add("@HO8ITC", SqlDbType.VarChar, 50).Value = Nothing
+            Else
+                cmd.Parameters.Add("@HO8ITC", SqlDbType.VarChar, 50).Value = Parent.AegisHO8_TheftCoverageOnPremises.SelectedValue & "," & Parent.AegisHO8_TheftCoverageOffPremises.SelectedValue
+            End If
+            If Parent.AegisHO8_GolfCartCoverage.SelectedValue = "" Then
+                cmd.Parameters.Add("@HO8GCC", SqlDbType.VarChar, 50).Value = Nothing
+            Else
+                cmd.Parameters.Add("@HO8GCC", SqlDbType.VarChar, 50).Value = Parent.AegisHO8_GolfCartCoverage.SelectedValue
+            End If
 
 
+        End Sub
 
-            'If CInt(Parent.mhvalue) < 125001 Then
-            '    Dim otherstructures As String
-            '    Dim contents As String
-            '    Dim liability As String
-            '    Dim aop As String
-            '    Dim prg As String
-            '    Dim display As String
-            '    Dim prt As String = "0"
-            '    If Parent.protection.Text = "" Then
-            '        prt = "0"
-            '    Else
-            '        prt = Parent.protection.Text
-            '    End If
-            '    Dim age As Integer = 0
-            '    If IsDate(Parent.lbldob.Text) Then
-            '        age = Parent.CalculateAegisAge(CDate(Parent.lbldob.Text), CDate(Parent.lbleffdate.Text))
-            '    ElseIf Parent.lbldob.Text.Length = 8 Then
-            '        Dim dtedob As Date
-            '        dtedob = CDate(Parent.lbldob.Text.Substring(0, 2) & "/" & Parent.lbldob.Text.Substring(2, 2) & "/" & Parent.lbldob.Text.Substring(4, 4))
-            '        age = Parent.CalculateAegisAge(dtedob, CDate(Parent.lbleffdate.Text))
-            '    Else
-            '        age = 0
-            '    End If
+#End Region
 
-            '    If Parent.mhusagelbl.Text = "Owner" Or Parent.mhusagelbl.Text = "Seasonal" Then
-            '        If Parent.mhusagelbl.Text = "Owner" Then
-            '            prg = "Standard"
-            '        Else
-            '            prg = "Seasonal"
-            '        End If
+#Region "ProcessTheftCoverageChange"
 
-            '        aop = "0" 'dd_aop_aiges1.SelectedValue
-            '        If IsNumeric(Parent.txt_unattstr_Aegisvintsc1.Text) Then
-            '            If CInt(Parent.txt_unattstr_Aegisvintsc1.Text) > (CInt(Parent.MHValuelbl.Text) * 0.05) Then
-            '                Parent.txt_unattstr_Aegisvintsc1.Text = (CInt(Parent.MHValuelbl.Text) * 0.05)
-            '            End If
-            '            otherstructures = Parent.txt_unattstr_Aegisvintsc1.Text
-            '        Else
-            '            otherstructures = "0"
-            '        End If
-            '        If IsNumeric(Parent.txt_pp_Aegisvintsc1.Text) Then
-            '            If CInt(Parent.txt_pp_Aegisvintsc1.Text) > (CInt(Parent.MHValuelbl.Text) * 0.3) Then
-            '                If CInt(Parent.txt_pp_Aegisvintsc1.Text) > 5000 Then
-            '                    Parent.txt_pp_Aegisvintsc1.Text = "5000"
-            '                Else
-            '                    Parent.txt_pp_Aegisvintsc1.Text = (CInt(Parent.MHValuelbl.Text) * 0.3)
-
-            '                End If
-
-            '            End If
-            '            contents = Parent.txt_pp_Aegisvintsc1.Text
-            '        Else
-            '            contents = 0
-            '        End If
-
-            '        liability = Parent.dd_pl_Aegisvintsc1.SelectedValue
-            '        display = "Standard"
-            '    Else
-            '        'rental
-            '        display = "Rental"
-            '        prg = "Standard"
-            '        aop = "500" 'dd_aop_aiges2.SelectedValue
-            '        If IsNumeric(Parent.txt_unattstr_Aegisvintsc1.Text) Then
-            '            If CInt(Parent.txt_unattstr_Aegisvintsc1.Text) > (CInt(Parent.MHValuelbl.Text) * 0.05) Then
-            '                Parent.txt_unattstr_Aegisvintsc1.Text = (CInt(Parent.MHValuelbl.Text) * 0.05)
-            '            End If
-            '            otherstructures = Parent.txt_unattstr_Aegisvintsc1.Text
-            '        Else
-            '            otherstructures = "0"
-            '        End If
-            '        If IsNumeric(Parent.txt_pp_Aegisvintsc1.Text) Then
-            '            If CInt(Parent.txt_pp_Aegisvintsc1.Text) > (CInt(Parent.MHValuelbl.Text) * 0.3) Or CInt(Parent.txt_pp_Aegisvintsc1.Text) > 5000 Then
-            '                If CInt(Parent.txt_pp_Aegisvintsc1.Text) > 5000 Then
-            '                    Parent.txt_pp_Aegisvintsc1.Text = "5000"
-            '                Else
-            '                    Parent.txt_pp_Aegisvintsc1.Text = (CInt(Parent.MHValuelbl.Text) * 0.3)
-
-            '                End If
-
-            '            End If
-            '            contents = Parent.txt_pp_Aegisvintsc1.Text
-            '        Else
-            '            contents = 0
-            '        End If
-
-            '        liability = Parent.dd_pl_Aegisvintsc1.SelectedValue
-            '        If liability = "" Then
-            '            liability = "0"
-            '        End If
-            '        contents = 0
-            '    End If
-
-
-            '    Dim Connection As String = System.Configuration.ConfigurationManager.ConnectionStrings("ColonialMHConnectionString").ConnectionString
-            '    Dim dbConnection As System.Data.IDbConnection = New System.Data.SqlClient.SqlConnection(Connection)
-            '    Dim cmd As New SqlCommand("sp_GetAegisRates", dbConnection)
-            '    cmd.CommandType = CommandType.StoredProcedure
-            '    cmd.Parameters.Add("@mhValue", SqlDbType.VarChar, 8000).Value = CInt(Parent.mhvalue)
-            '    cmd.Parameters.Add("@mhYear", SqlDbType.VarChar, 8000).Value = CInt(Parent.mhyear)
-            '    cmd.Parameters.Add("@prot", SqlDbType.VarChar, 8000).Value = CInt(prt)
-            '    cmd.Parameters.Add("@oStruc", SqlDbType.VarChar, 8000).Value = CInt(otherstructures.Replace("$", "").Replace(",", ""))
-            '    cmd.Parameters.Add("@cont", SqlDbType.VarChar, 8000).Value = CInt(contents.Replace("$", "").Replace(",", ""))
-            '    cmd.Parameters.Add("@age", SqlDbType.VarChar, 8000).Value = age '"49"  'Need to get this from quote screen
-            '    cmd.Parameters.Add("@liability", SqlDbType.VarChar, 8000).Value = CInt(liability.Replace("$", "").Replace(",", ""))
-            '    cmd.Parameters.Add("@AOP", SqlDbType.VarChar, 8000).Value = CInt(aop.Replace("$", "").Replace(",", ""))
-            '    cmd.Parameters.Add("@county", SqlDbType.VarChar, 8000).Value = Parent.mhcounty
-            '    cmd.Parameters.Add("@type", SqlDbType.VarChar, 8000).Value = prg
-            '    cmd.Parameters.Add("@effdate", SqlDbType.VarChar, 8000).Value = Parent.lbleffdate.Text
-            '    cmd.Parameters.Add("@territory", SqlDbType.VarChar, 8000).Value = Parent.aegisterritorylbl.Text
-
-            '    Try
-            '        Dim ds As Data.DataSet = New Data.DataSet
-
-            '        cmd.Connection.Open()
-
-            '        Dim myCommand = New SqlDataAdapter(cmd)
-            '        myCommand.Fill(ds, "tbl1")
-            '        If ds.Tables("tbl1").Rows.Count > 0 Then
-            '            Select Case display
-            '                Case "Standard"
-            '                    Parent.aiges_mh_prog2.Visible = True
-            '                    Parent.aiges_mh_prog2_Options.Visible = True
-            '                    Parent.aiges_mh_prog3.Visible = False
-            '                    Parent.aiges_mh_prog3_Options1.Visible = False
-            '                    'AegisVintageCalc(ds)
-
-            '                Case "Rental"
-            '                    'AegisVintageCalc(ds)
-            '            End Select
-            '        Else
-            '            'Hide aegis 
-            '            Parent.aiges_mh_prog2.Visible = False
-            '            Parent.aiges_mh_prog2_Options.Visible = False
-            '            Parent.aiges_mh_prog3.Visible = False
-            '            Parent.aiges_mh_prog3_Options1.Visible = False
-            '        End If
-
-            '    Catch ex As Exception
-            '        Dim s As String = ""
-            '        For Each param As SqlParameter In cmd.Parameters
-            '            s += param.ParameterName & "="
-            '            s += param.Value & ":  "
-
-            '        Next
-            '        Parent.errortrap("Geting Calculation data " & s, "Calculation Aegis Vintage", ex.Message)
-            '    End Try
-            'End If
+        Public Sub ProcessTheftCoverageChange()
+            Parent.AegisHO8_TheftCoverageOffPremises.Enabled = Parent.AegisHO8_TheftCoverageOnPremises.SelectedValue = "3000" Or Parent.AegisHO8_TheftCoverageOnPremises.SelectedValue = "5000"
         End Sub
 
 #End Region
@@ -11034,7 +10972,9 @@ Public Class Lloyds
 #End Region
 
     Protected Sub AegisHO8_TheftCoverageOnPremises_SelectedIndexChanged(sender As Object, e As EventArgs)
-        AegisHO8_TheftCoverageOffPremises.Enabled = AegisHO8_TheftCoverageOnPremises.SelectedValue = "3000" Or AegisHO8_TheftCoverageOnPremises.SelectedValue = "5000"
+        Dim ho8Rules As AegisHo8Rules = New AegisHo8Rules(Me)
+        ho8Rules.ProcessTheftCoverageChange()
+
     End Sub
     
 End Class
