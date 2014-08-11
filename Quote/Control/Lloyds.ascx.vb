@@ -10767,7 +10767,9 @@ Public Class Lloyds
 
                 Dim calcDetails As StringBuilder = New StringBuilder()
                 Dim total As Decimal = 0
-                Dim basePremium As Decimal = 100
+                Dim basePremium As Decimal = 0
+                Dim ios As Decimal = 0
+                GetRates(basePremium, ios)
 
                 total = basePremium
                 calcDetails.Append("<table>")
@@ -10778,10 +10780,10 @@ Public Class Lloyds
                 calcDetails.Append("</td></tr>")
 
                 calcDetails.Append("<tr align=left><td>Increased Other Structures</td><td>")
-                calcDetails.Append(FormatCurrency(0.0))
+                calcDetails.Append(FormatCurrency(ios))
                 calcDetails.Append("</td></tr>")
 
-                Parent.AegisHO8_IncreasedOtherStructuresAmount.Text = FormatCurrency(0.0)
+                Parent.AegisHO8_IncreasedOtherStructuresAmount.Text = FormatCurrency(ios)
 
                 'Personal Property Replacement Cost
                 If Parent.AegisHO8_PPReplacementCost.SelectedValue = "Yes" Then
@@ -10926,9 +10928,60 @@ Public Class Lloyds
 
 #End Region
 
+#Region "FormatCurrency"
+
         Private Function FormatCurrency(value As Decimal) As String
             Return value.ToString("c")
         End Function
+
+#End Region
+
+#Region "GetRates"
+
+        Private Sub GetRates(ByRef basePremium As Decimal, ByRef ios As Decimal)
+            Dim Connection As String = System.Configuration.ConfigurationManager.ConnectionStrings("ColonialMHConnectionString").ConnectionString
+            Dim dbConnection As System.Data.IDbConnection = New System.Data.SqlClient.SqlConnection(Connection)
+            Dim cmd As New SqlCommand("sp_GetAegisHO8Rates", dbConnection)
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Parameters.Add("@mhValue", SqlDbType.VarChar, 8000).Value = CInt(Parent.mhvalue)
+            cmd.Parameters.Add("@mhYear", SqlDbType.VarChar, 8000).Value = CInt(Parent.mhyear)
+            cmd.Parameters.Add("@prot", SqlDbType.VarChar, 8000).Value = "0"
+            cmd.Parameters.Add("@oStruc", SqlDbType.VarChar, 8000).Value = "0"
+            cmd.Parameters.Add("@cont", SqlDbType.VarChar, 8000).Value = "0"
+            cmd.Parameters.Add("@age", SqlDbType.VarChar, 8000).Value = "0"
+            cmd.Parameters.Add("@liability", SqlDbType.VarChar, 8000).Value = "0"
+            cmd.Parameters.Add("@AOP", SqlDbType.VarChar, 8000).Value = 0
+            cmd.Parameters.Add("@county", SqlDbType.VarChar, 8000).Value = Parent.mhcounty
+            cmd.Parameters.Add("@type", SqlDbType.VarChar, 8000).Value = ""
+            cmd.Parameters.Add("@effdate", SqlDbType.VarChar, 8000).Value = Parent.lbleffdate.Text
+            cmd.Parameters.Add("@territory", SqlDbType.VarChar, 8000).Value = Parent.aegisterritorylbl.Text
+
+            Try
+                Dim ds As Data.DataSet = New Data.DataSet
+
+                cmd.Connection.Open()
+
+                Dim myCommand = New SqlDataAdapter(cmd)
+                myCommand.Fill(ds, "tbl1")
+                If ds.Tables("tbl1").Rows.Count > 0 Then
+                    basePremium = CDec(ds.Tables("tbl1").Rows(0).Item("HO8Prem"))
+                    ios = CDec(ds.Tables("tbl1").Rows(0).Item("HO8IOS"))
+                Else
+                    Hide()
+                End If
+
+            Catch ex As Exception
+                Dim s As String = ""
+                For Each param As SqlParameter In cmd.Parameters
+                    s += param.ParameterName & "="
+                    s += param.Value & ":  "
+
+                Next
+                Parent.errortrap("Geting Calculation data " & s, "Calculation Aegis HO8", ex.Message)
+            End Try
+        End Sub
+
+#End Region
 
 #Region "LoadData"
 
