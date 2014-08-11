@@ -4878,34 +4878,34 @@ function AR_UpdateOptions() {
                                                     <asp:Label ID="Label187" runat="server" Text="Aegis HO8" CssClass="labelCov" />
                                                 </td>
                                                 <td align="center" style="border: 1px solid">
-                                                    <asp:Label ID="Label189" runat="server" Text="0.00" CssClass="labelCov" />
+                                                    <asp:Label ID="AegisHO8_DwellingAmount" runat="server" Text="0.00" CssClass="labelCov" />
                                                 </td>
                                                 <td align="center" style="border: 1px solid" class="style3">
-                                                    <asp:Label ID="Label191" runat="server" Text="0.00" CssClass="labelCov" />
+                                                    <asp:Label ID="AegisHO8_OtherStructuresHeader" runat="server" Text="0.00" CssClass="labelCov" />
                                                 </td>
                                                 <td align="center" style="border: 1px solid">
-                                                    <asp:Label ID="Label193" runat="server" Text="0.00" CssClass="labelCov" />
+                                                    <asp:Label ID="AegisHO8_ContentsHeader" runat="server" Text="0.00" CssClass="labelCov" />
                                                 </td>
                                                 <td align="center" style="border: 1px solid;">
-                                                    <asp:Label ID="Label194" runat="server" Text="0.00" CssClass="labelCov" />
+                                                    <asp:Label ID="AegisHO8_PersonalLiabilityHeader" runat="server" Text="0.00" CssClass="labelCov" />
                                                 </td>
                                                 <td align="center" style="border: 1px solid">
-                                                    <asp:Label ID="Label195" runat="server" Text="0.00" CssClass="labelCov" />
+                                                    <asp:Label ID="AegisHO8_MedicalPaymentHeader" runat="server" Text="0.00" CssClass="labelCov" />
                                                 </td>
                                                 <td align="center" style="border: 1px solid">
-                                                    <asp:Label ID="Label196" runat="server" Text="0.00" CssClass="labelCov" />
+                                                    <asp:Label ID="AegisHO8_BasePremiumAmountHeader" runat="server" Text="0.00" CssClass="labelCov" />
                                                 </td>
                                                 <td align="center" style="border: 1px solid">
-                                                    <asp:Label ID="Label197" runat="server" Text="0.00" CssClass="labelCov" />
+                                                    <asp:Label ID="AegisHO8_OptionsHeader" runat="server" Text="0.00" CssClass="labelCov" />
                                                 </td>
                                                 <td align="center" style="border: 1px solid">
-                                                    <asp:Label ID="Label198" runat="server" Text="$0.00" CssClass="labelCov" />
+                                                    <asp:Label ID="AegisHO8_FeesHeader" runat="server" Text="$0.00" CssClass="labelCov" />
                                                 </td>
                                                 <td align="center" style="border: 1px solid">
-                                                    <asp:Label ID="Label199" runat="server" Text="0.00" CssClass="labelCov" />
+                                                    <asp:Label ID="AegisHO8_TaxesHeader" runat="server" Text="0.00" CssClass="labelCov" />
                                                 </td>
                                                 <td align="center" style="border: 1px solid">
-                                                    <asp:Label ID="Label200" runat="server" Text="0.00" CssClass="labelTotal" />
+                                                    <asp:Label ID="AegisHO8_TotalAmount" runat="server" Text="0.00" CssClass="labelTotal" />
                                                 </td>
                                                 <td align="center" style="border: 1px solid">
                                                     <asp:Button ID="Button11" runat="server" OnClick="selectAegisvint1btnsc1_Click" Text="Select" />
@@ -5027,7 +5027,7 @@ function AR_UpdateOptions() {
                                                                         ClientIDMode="Static">
                                                                         <asp:ListItem>1%</asp:ListItem>
                                                                         <asp:ListItem>2%</asp:ListItem>
-                                                                        <asp:ListItem>3%</asp:ListItem>
+                                                                        <asp:ListItem>5%</asp:ListItem>
 
                                                                     </asp:DropDownList>
                                                                     &nbsp;
@@ -5172,7 +5172,7 @@ function AR_UpdateOptions() {
 
                                                             <tr>
                                                                 <td align="left">
-                                                                    <asp:Button ID="AegisHO8_UpdateOptionalCoverages" runat="server" Text="Update Optional Coverages"
+                                                                    <asp:Button ID="AegisHO8_UpdateOptionalCoverages" runat="server" Text="Update Optional Coverages" OnClick="AegisHO8_UpdateOptionalCoverages_Click"
                                                                          TabIndex="22" />
                                                                 </td>
                                                             </tr>

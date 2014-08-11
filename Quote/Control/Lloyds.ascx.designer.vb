@@ -8438,94 +8438,94 @@ Partial Public Class Lloyds
     Protected WithEvents Label187 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Label189 control.
+    '''AegisHO8_DwellingAmount control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label189 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents AegisHO8_DwellingAmount As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Label191 control.
+    '''AegisHO8_OtherStructuresHeader control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label191 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents AegisHO8_OtherStructuresHeader As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Label193 control.
+    '''AegisHO8_ContentsHeader control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label193 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents AegisHO8_ContentsHeader As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Label194 control.
+    '''AegisHO8_PersonalLiabilityHeader control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label194 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents AegisHO8_PersonalLiabilityHeader As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Label195 control.
+    '''AegisHO8_MedicalPaymentHeader control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label195 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents AegisHO8_MedicalPaymentHeader As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Label196 control.
+    '''AegisHO8_BasePremiumAmountHeader control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label196 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents AegisHO8_BasePremiumAmountHeader As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Label197 control.
+    '''AegisHO8_OptionsHeader control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label197 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents AegisHO8_OptionsHeader As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Label198 control.
+    '''AegisHO8_FeesHeader control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label198 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents AegisHO8_FeesHeader As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Label199 control.
+    '''AegisHO8_TaxesHeader control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label199 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents AegisHO8_TaxesHeader As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Label200 control.
+    '''AegisHO8_TotalAmount control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label200 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents AegisHO8_TotalAmount As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''Button11 control.

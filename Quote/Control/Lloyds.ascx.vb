@@ -10767,65 +10767,82 @@ Public Class Lloyds
 
                 Dim calcDetails As StringBuilder = New StringBuilder()
                 Dim total As Decimal = 0
-                Dim basePremium As Decimal = 0
+                Dim basePremium As Decimal = 100
 
                 total = basePremium
+                calcDetails.Append("<table>")
+
+
+                calcDetails.Append("<tr align=left><td>Base Premium</td><td>")
+                calcDetails.Append(FormatCurrency(basePremium))
+                calcDetails.Append("</td></tr>")
+
+                calcDetails.Append("<tr align=left><td>Increased Other Structures</td><td>")
+                calcDetails.Append(FormatCurrency(0.0))
+                calcDetails.Append("</td></tr>")
+
+                Parent.AegisHO8_IncreasedOtherStructuresAmount.Text = FormatCurrency(0.0)
+
+                'Personal Property Replacement Cost
+                If Parent.AegisHO8_PPReplacementCost.SelectedValue = "Yes" Then
+                    calcDetails.Append("<tr align=left><td>Personal Property Replacement Cost</td>")
+                    calcDetails.Append("<td>")
+                    Dim replacement As Decimal = (basePremium / 100) * 5
+                    calcDetails.Append(FormatCurrency(replacement))
+                    total += replacement
+                    Parent.AegisHO8_PPReplacementCostAmount.Text = FormatCurrency(replacement)
+                    calcDetails.Append("</td></tr>")
+                End If
+
+                Dim personalLiabilityAmount As Decimal = 0
+                'Personal Liability $25,000 (-$11), $50,000 (-$6), $100,000 (Incl $0), $200,000 ($5), $300,000 ($8)
+                If Parent.AegisHO8_PersonalLiability.SelectedValue <> "" Then
+                    calcDetails.Append("<tr align=left><td>Personal Liability</td>")
+                    calcDetails.Append("<td>")
+                    If Parent.AegisHO8_PersonalLiability.SelectedValue = "$25,000" Then
+                        Parent.AegisHO8_PersonalLiabilityAmount.Text = FormatCurrency(-11)
+                        calcDetails.Append(FormatCurrency(-11))
+                        total -= 11
+                        personalLiabilityAmount = -11
+                    ElseIf Parent.AegisHO8_PersonalLiability.SelectedValue = "$50,000" Then
+                        Parent.AegisHO8_PersonalLiabilityAmount.Text = FormatCurrency(-6)
+                        calcDetails.Append(FormatCurrency(-6))
+                        total -= 6
+                        personalLiabilityAmount = -6
+                    ElseIf Parent.AegisHO8_PersonalLiability.SelectedValue = "$100,000" Then
+                        calcDetails.Append(FormatCurrency(0))
+                    ElseIf Parent.AegisHO8_PersonalLiability.SelectedValue = "$200,000" Then
+                        Parent.AegisHO8_PersonalLiabilityAmount.Text = FormatCurrency(5)
+                        calcDetails.Append(FormatCurrency(5))
+                        total += 5
+                        personalLiabilityAmount = 5
+                    ElseIf Parent.AegisHO8_PersonalLiability.SelectedValue = "$300,000" Then
+                        Parent.AegisHO8_PersonalLiabilityAmount.Text = FormatCurrency(8)
+                        calcDetails.Append(FormatCurrency(8))
+                        total += 8
+                        personalLiabilityAmount = 8
+                    End If
+                    calcDetails.Append("</td></tr>")
+                End If
 
                 'Medical Payment $1,000 (Incl $0) or $2,000 ($3)
                 If Parent.AegisHO8_MedicalPayment.SelectedValue <> "" Then
                     calcDetails.Append("<tr align=left><td>Medical Payment</td>")
-                    calcDetails.Append("<td>$")
+                    calcDetails.Append("<td>")
                     If Parent.AegisHO8_MedicalPayment.SelectedValue = "$1000" Then
-                        Parent.AegisHO8_MedicalPaymentAmount.Text = "0"
-                        calcDetails.Append(0)
+                        Parent.AegisHO8_MedicalPaymentAmount.Text = FormatCurrency(0)
+                        calcDetails.Append(FormatCurrency(0))
                     ElseIf Parent.AegisHO8_MedicalPayment.SelectedValue = "$2000" Then
-                        Parent.AegisHO8_MedicalPaymentAmount.Text = "3"
-                        calcDetails.Append(3)
+                        Parent.AegisHO8_MedicalPaymentAmount.Text = FormatCurrency(3)
+                        calcDetails.Append(FormatCurrency(3))
                         total += 3
                     End If
                     calcDetails.Append("</td></tr>")
                 End If
 
-                'Personal Liability $25,000 (-$11), $50,000 (-$6), $100,000 (Incl $0), $200,000 ($5), $300,000 ($8)
-                If Parent.AegisHO8_PersonalLiability.SelectedValue <> "" Then
-                    calcDetails.Append("<tr align=left><td>Personal Liability</td>")
-                    calcDetails.Append("<td>$")
-                    If Parent.AegisHO8_PersonalLiability.SelectedValue = "$25,000" Then
-                        Parent.AegisHO8_PersonalLiabilityAmount.Text = "-11"
-                        calcDetails.Append(-11)
-                        total -= 11
-                    ElseIf Parent.AegisHO8_PersonalLiability.SelectedValue = "$50,000" Then
-                        Parent.AegisHO8_PersonalLiabilityAmount.Text = "-6"
-                        calcDetails.Append(-6)
-                        total -= 6
-                    ElseIf Parent.AegisHO8_PersonalLiability.SelectedValue = "$100,000" Then
-
-                    ElseIf Parent.AegisHO8_PersonalLiability.SelectedValue = "$200,000" Then
-                        Parent.AegisHO8_PersonalLiabilityAmount.Text = "5"
-                        calcDetails.Append(5)
-                        total += 5
-                    ElseIf Parent.AegisHO8_PersonalLiability.SelectedValue = "$300,000" Then
-                        Parent.AegisHO8_PersonalLiabilityAmount.Text = "8"
-                        calcDetails.Append(8)
-                        total += 8
-                    End If
-                    calcDetails.Append("</td></tr>")
-                End If
-
-                'Personal Property Replacement Cost
-                If Parent.AegisHO8_PPReplacementCost.SelectedValue = "Yes" Then
-                    calcDetails.Append("<tr align=left><td>Personal Property Replacement Cost</td>")
-                    calcDetails.Append("<td>$")
-                    Dim replacement As Decimal = (basePremium / 100) * 5
-                    calcDetails.Append(replacement)
-                    total += replacement
-                    Parent.AegisHO8_PPReplacementCostAmount.Text = replacement
-                    calcDetails.Append("</td></tr>")
-                End If
-
                 ' Wind/Hail Deductible – 1% (22% of base prem), 2% (24% of base prem), or 5% (28% of base prem)
                 calcDetails.Append("<tr align=left><td>Wind/Hail Deductible</td>")
-                calcDetails.Append("<td>$")
+                calcDetails.Append("<td>")
                 Dim windHail As Decimal = 0
                 If Parent.AegisHO8_WindHail.SelectedValue = "1%" Then
                     windHail = (basePremium / 100) * 22
@@ -10834,31 +10851,15 @@ Public Class Lloyds
                 ElseIf Parent.AegisHO8_WindHail.SelectedValue = "5%" Then
                     windHail = (basePremium / 100) * 28
                 End If
-                calcDetails.Append(windHail)
+                calcDetails.Append(FormatCurrency(windHail))
                 total += windHail
-                Parent.AegisHO8_WindHailAmount.Text = windHail
+                Parent.AegisHO8_WindHailAmount.Text = FormatCurrency(windHail)
                 calcDetails.Append("</td></tr>")
-
-                ' Golf Cart Coverage - $12 with collision or $7 without collision
-                If Parent.AegisHO8_GolfCartCoverage.SelectedValue <> "" Then
-                    calcDetails.Append("<tr align=left><td>Golf Cart Coverage</td>")
-                    calcDetails.Append("<td>$")
-                    Dim golfCart As Decimal = 0
-                    If Parent.AegisHO8_GolfCartCoverage.SelectedValue = "WithCollision" Then
-                        golfCart += 12
-                    ElseIf Parent.AegisHO8_GolfCartCoverage.SelectedValue = "WithoutCollision" Then
-                        golfCart += 7
-                    End If
-                    calcDetails.Append(golfCart)
-                    total += golfCart
-                    Parent.AegisHO8_GolfCartCoverageAmount.Text = windHail
-                    calcDetails.Append("</td></tr>")
-                End If
 
                 ' Increase Theft Coverage - $19/$2000 on premises or $10 off premises
                 If Parent.AegisHO8_TheftCoverageOnPremises.SelectedValue <> "" Then
                     calcDetails.Append("<tr align=left><td>Increase Theft Coverage</td>")
-                    calcDetails.Append("<td>$")
+                    calcDetails.Append("<td>")
                     Dim theftCoverage As Decimal = 0
                     Dim theftFactor As Decimal = 1
                     If Parent.AegisHO8_TheftCoverageOnPremises.SelectedValue = "3000" Then
@@ -10867,18 +10868,53 @@ Public Class Lloyds
                         theftFactor = 2
                     End If
                     If Parent.AegisHO8_TheftCoverageOffPremises.SelectedValue = "Yes" Then
-                        theftCoverage = 19
-                    ElseIf Parent.AegisHO8_TheftCoverageOffPremises.SelectedValue = "No" Then
                         theftCoverage = 10
+                    ElseIf Parent.AegisHO8_TheftCoverageOffPremises.SelectedValue = "No" Then
+                        theftCoverage = 19
                     End If
                     theftCoverage *= theftFactor
-                    calcDetails.Append(theftCoverage)
+                    calcDetails.Append(FormatCurrency(theftCoverage))
                     total += theftCoverage
-                    Parent.AegisHO8_TheftCoverageOnPremises.Text = theftCoverage
+                    Parent.AegisHO8_TheftCoverageOnPremisesAmount.Text = FormatCurrency(theftCoverage)
                     calcDetails.Append("</td></tr>")
                 Else
                     Parent.AegisHO8_TheftCoverageOnPremisesAmount.Text = ""
                 End If
+
+                ' Golf Cart Coverage - $12 with collision or $7 without collision
+                If Parent.AegisHO8_GolfCartCoverage.SelectedValue <> "" Then
+                    calcDetails.Append("<tr align=left><td>Golf Cart Coverage</td>")
+                    calcDetails.Append("<td>")
+                    Dim golfCart As Decimal = 0
+                    If Parent.AegisHO8_GolfCartCoverage.SelectedValue = "WithCollision" Then
+                        golfCart += 12
+                    ElseIf Parent.AegisHO8_GolfCartCoverage.SelectedValue = "WithoutCollision" Then
+                        golfCart += 7
+                    End If
+                    calcDetails.Append(FormatCurrency(golfCart))
+                    total += golfCart
+                    Parent.AegisHO8_GolfCartCoverageAmount.Text = FormatCurrency(golfCart)
+                    calcDetails.Append("</td></tr>")
+                End If
+
+
+                calcDetails.Append("<tr align=left><td>Total</td><td>")
+                calcDetails.Append(FormatCurrency(total))
+                calcDetails.Append("</td></tr>")
+
+                Parent.AegisHO8_DwellingAmount.Text = "$" & CDec(Parent.mhvalue)
+                Parent.AegisHO8_OtherStructuresHeader.Text = FormatCurrency(0.0)
+                Parent.AegisHO8_ContentsHeader.Text = FormatCurrency(0.0)
+                Parent.AegisHO8_PersonalLiabilityHeader.Text = Parent.AegisHO8_PersonalLiability.SelectedValue
+                Parent.AegisHO8_MedicalPaymentHeader.Text = Parent.AegisHO8_MedicalPayment.SelectedValue
+                Parent.AegisHO8_BasePremiumAmountHeader.Text = basePremium.ToString("c0")
+                Parent.AegisHO8_OptionsHeader.Text = FormatCurrency(0.0)
+                Parent.AegisHO8_FeesHeader.Text = FormatCurrency(0.0)
+                Parent.AegisHO8_TaxesHeader.Text = FormatCurrency(0.0)
+                Parent.AegisHO8_TotalAmount.Text = FormatCurrency(total)
+
+                calcDetails.Append("</table>")
+
 
                 Parent.AegisHO8_CalcDetails.Text = calcDetails.ToString()
 
@@ -10889,6 +10925,10 @@ Public Class Lloyds
         End Sub
 
 #End Region
+
+        Private Function FormatCurrency(value As Decimal) As String
+            Return value.ToString("c")
+        End Function
 
 #Region "LoadData"
 
@@ -10977,4 +11017,8 @@ Public Class Lloyds
 
     End Sub
     
+    Protected Sub AegisHO8_UpdateOptionalCoverages_Click(sender As Object, e As EventArgs)
+        Dim ho8Rules As AegisHo8Rules = New AegisHo8Rules(Me)
+        ho8Rules.Calculate()
+    End Sub
 End Class
