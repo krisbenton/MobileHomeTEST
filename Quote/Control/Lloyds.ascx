@@ -4867,7 +4867,7 @@ function AR_UpdateOptions() {
 
 
                                                                   <%-- Aegis HO8 Start--%>
-                                         <tr id="AegisHO8_RootRow" runat="server" visible="true" style="border: 1px solid black;">
+                                         <tr id="AegisHO8_RootRow" runat="server" visible="false" style="border: 1px solid black;">
                                                 <td align="center" style="border: 1px solid" width="251px">
                                                     <label id="AegisHO8_ShowOptions" runat="server" style="color: Blue; cursor: pointer;"
                                                         onclick="AROptionsShow(14);" clientidmode="Static">
@@ -4911,7 +4911,7 @@ function AR_UpdateOptions() {
                                                     <asp:Button ID="Button11" runat="server" OnClick="selectAegisvint1btnsc1_Click" Text="Select" />
                                                 </td>
                                             </tr>
-                                            <tr id="AegisHO8_Options" runat="server" clientidmode="Static">
+                                            <tr id="AegisHO8_Options" runat="server" visible="false" clientidmode="Static">
                                                 <td colspan="13">
                                                     <table id="AegisHO8_OptionsTable" runat="server" width="auto" cellpadding="0" cellspacing="0"
                                                         clientidmode="Static" bgcolor="white" title="AR Options">
@@ -5234,6 +5234,7 @@ function AR_UpdateOptions() {
         <asp:Label ID="protection" runat="server" Text=""  Style="display: none"></asp:Label>
         <asp:Label ID="lienlbl" runat="server" Text=""  Style="display: none"></asp:Label>
         <asp:Label ID="supheatlbl" runat="server" Text=""  Style="display: none"></asp:Label>
+    <asp:Label ID="heatTypeLabel" runat="server" Text=""  Style="display: none"></asp:Label>
        <asp:Label ID="SMHpackperclbl" runat="server" Text=""  Style="display: none"></asp:Label>
        <asp:Label ID="aegisterritorylbl" runat="server" Text=""  Style="display: none"></asp:Label>
     <asp:Label ID="SMHpackcramtlbl" runat="server" Text=""  Style="display: none"></asp:Label>

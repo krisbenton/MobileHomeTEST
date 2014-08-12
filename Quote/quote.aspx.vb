@@ -1567,6 +1567,10 @@ Public Class quote
             End If
             Dim showlloyd As Boolean = False
             Dim UWStr As String
+
+
+
+
             If lblState.Text <> "FL" Then
 
                 If lblState.Text = "DE" Then
@@ -1575,7 +1579,7 @@ Public Class quote
                             showlloyd = False
                             ARFLtbl.Visible = False
                         Else
-                            Lloyds1.loadpremdata(txtcvgamt.Text, lblState.Text, typedd.SelectedValue, manfdd.SelectedValue, txtYear.Text, txtCounty.Text, lblquoteNumber.Text, homeusedd.SelectedValue, distToCoastDD.SelectedValue, protclassdd.SelectedValue, liendd.SelectedValue, supheatdd.SelectedValue, txtDOB1.Text, skirtdd.SelectedValue, txtSubNumber.Text, lapsdd.SelectedValue, cddlCity.SelectedValue, txtEffDate.Text, aegisterritorylbl.Text)
+                            Lloyds1.loadpremdata(txtcvgamt.Text, lblState.Text, typedd.SelectedValue, manfdd.SelectedValue, txtYear.Text, txtCounty.Text, lblquoteNumber.Text, homeusedd.SelectedValue, distToCoastDD.SelectedValue, protclassdd.SelectedValue, liendd.SelectedValue, supheatdd.SelectedValue, txtDOB1.Text, skirtdd.SelectedValue, txtSubNumber.Text, lapsdd.SelectedValue, cddlCity.SelectedValue, txtEffDate.Text, aegisterritorylbl.Text, supHeatTypedd.SelectedValue)
                             'Lloyds1.Visible = True
                             showlloyd = True
                             ARFLtbl.Visible = False
@@ -1601,7 +1605,7 @@ Public Class quote
 
                             'commented out for Vickie on 12/12/2013 to allow Amslic quoting
                             'If distToCoastDD.SelectedValue <> "Less than 2 miles" And distToCoastDD.SelectedValue <> "" Then
-                            Lloyds1.loadpremdata(txtcvgamt.Text, lblState.Text, typedd.SelectedValue, manfdd.SelectedValue, txtYear.Text, txtCounty.Text, lblquoteNumber.Text, homeusedd.SelectedValue, distToCoastDD.SelectedValue, protclassdd.SelectedValue, liendd.SelectedValue, supheatdd.SelectedValue, txtDOB1.Text, skirtdd.SelectedValue, txtSubNumber.Text, lapsdd.SelectedValue, cddlCity.SelectedValue, txtEffDate.Text, aegisterritorylbl.Text)
+                            Lloyds1.loadpremdata(txtcvgamt.Text, lblState.Text, typedd.SelectedValue, manfdd.SelectedValue, txtYear.Text, txtCounty.Text, lblquoteNumber.Text, homeusedd.SelectedValue, distToCoastDD.SelectedValue, protclassdd.SelectedValue, liendd.SelectedValue, supheatdd.SelectedValue, txtDOB1.Text, skirtdd.SelectedValue, txtSubNumber.Text, lapsdd.SelectedValue, cddlCity.SelectedValue, txtEffDate.Text, aegisterritorylbl.Text, supHeatTypedd.SelectedValue)
                             'Lloyds1.Visible = True
                             showlloyd = True
 

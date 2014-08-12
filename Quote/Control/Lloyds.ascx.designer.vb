@@ -9077,6 +9077,15 @@ Partial Public Class Lloyds
     Protected WithEvents supheatlbl As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''heatTypeLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents heatTypeLabel As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''SMHpackperclbl control.
     '''</summary>
     '''<remarks>

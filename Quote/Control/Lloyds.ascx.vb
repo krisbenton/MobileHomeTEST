@@ -350,7 +350,7 @@ Public Class Lloyds
         FinanceLengthRB.Attributes.Add("onChange", "return FinanceOptionChange();")
 
     End Sub
-    Public Sub loadpremdata(ByVal value As String, ByVal state As String, ByVal type As String, ByVal mfg As String, ByVal year As String, ByVal county As String, ByVal Quoteid As String, ByVal Usage As String, ByVal dist As String, ByVal prot As String, ByVal lien As String, ByVal subheat As String, ByVal dob As String, ByVal skirt As String, ByVal subnum As String, ByVal lapse As String, ByVal city As String, ByVal effdate As String, ByVal aegisterr As String)
+    Public Sub loadpremdata(ByVal value As String, ByVal state As String, ByVal type As String, ByVal mfg As String, ByVal year As String, ByVal county As String, ByVal Quoteid As String, ByVal Usage As String, ByVal dist As String, ByVal prot As String, ByVal lien As String, ByVal subheat As String, ByVal dob As String, ByVal skirt As String, ByVal subnum As String, ByVal lapse As String, ByVal city As String, ByVal effdate As String, ByVal aegisterr As String, heatType As String)
         MHValuelbl.Text = value.Replace(",", "")
         mhstatelbl.Text = state
         mhtypelbl.Text = type
@@ -376,7 +376,11 @@ Public Class Lloyds
         citylbl.Text = city
         lbleffdate.Text = effdate
         aegisterritorylbl.Text = aegisterr
+        heatTypeLabel.Text = heatType
 
+
+        Dim ho8Rules As AegisHo8Rules = New AegisHo8Rules(Me)
+        ho8Rules.ProcessProgram()
 
         'If state = "DE" Then
         '    SC_MH_08.Visible = False
@@ -704,6 +708,8 @@ Public Class Lloyds
             End If
 
         End If
+
+
 
         'If lbl_WMJ_Pack.Text = "True" Then
 
@@ -10740,6 +10746,13 @@ Public Class Lloyds
 
         Public Overrides Sub ProcessProgram()
             MyBase.ProcessProgram()
+
+            If String.Compare(Parent.mhstate, "nc", True) = 0 AndAlso Parent.mhusagelbl.Text = "Owner" AndAlso Parent.lblskirt.Text <> "None" AndAlso Parent.lapselbl.Text <> "Yes" AndAlso Not (Parent.supheatlbl.Text = "Yes" And Parent.heatTypeLabel.Text <> "Woodstove installed by a licensed contractor" And Parent.heatTypeLabel.Text <> "Fireplace installed by the manufacturer or licensed contractor") Then
+                Show()
+                Calculate()
+            Else
+                Hide()
+            End If
         End Sub
 
         Public Sub Show()
