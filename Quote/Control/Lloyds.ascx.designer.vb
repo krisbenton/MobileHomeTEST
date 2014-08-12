@@ -8618,6 +8618,33 @@ Partial Public Class Lloyds
     Protected WithEvents AegisHO8_CalcDetails As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''AegisHO8_AOPLabel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents AegisHO8_AOPLabel As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''AegisHO8_AOP control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents AegisHO8_AOP As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''AegisHO8_AOPAmount control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents AegisHO8_AOPAmount As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''AegisHO8_IncreasedOtherStructuresLabel control.
     '''</summary>
     '''<remarks>

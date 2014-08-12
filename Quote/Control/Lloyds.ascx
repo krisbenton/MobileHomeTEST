@@ -4946,7 +4946,18 @@ function AR_UpdateOptions() {
                                                                 </td>
                                                             </tr>
 
-                                                            
+                                                                                     <tr>
+                                                                <td align="left">
+                                                                    <asp:Label ID="AegisHO8_AOPLabel" runat="server" Text="AOP Deductible: " CssClass="label" />
+                                                                </td>
+                                                                <td align="left">
+                                                                    <asp:DropDownList ID="AegisHO8_AOP" runat="server" TabIndex="123">
+                                                                        <asp:ListItem>$1000</asp:ListItem>
+                                                                    </asp:DropDownList>
+                                                                     &nbsp;<asp:Label ID="AegisHO8_AOPAmount" runat="server" Text="0.00" CssClass="label" />
+                                                                    &nbsp;
+                                                                </td>
+                                                            </tr>
                                                               <tr>
                                                                 <td align="left">
                                                                     <asp:Label ID="AegisHO8_IncreasedOtherStructuresLabel" runat="server" Text="Increased Other Structures:  " CssClass="label" />

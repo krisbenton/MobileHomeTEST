@@ -10769,15 +10769,28 @@ Public Class Lloyds
                 Dim total As Decimal = 0
                 Dim basePremium As Decimal = 0
                 Dim ios As Decimal = 0
+                Dim aop As Decimal = 0
                 GetRates(basePremium, ios)
 
                 total = basePremium
                 calcDetails.Append("<table>")
-
-
                 calcDetails.Append("<tr align=left><td>Base Premium</td><td>")
                 calcDetails.Append(FormatCurrency(basePremium))
                 calcDetails.Append("</td></tr>")
+
+                aop = basePremium * 21 / 100
+
+                calcDetails.Append("<tr align=left><td>AOP</td><td>")
+                calcDetails.Append(FormatCurrency(aop))
+                calcDetails.Append("</td></tr>")
+                Parent.AegisHO8_AOPAmount.Text = FormatCurrency(aop)
+
+                ios = 0
+                If Not Decimal.TryParse(Parent.AegisHO8_IncreasedOtherStructures.Text, ios) Then
+                    ios = 0
+                Else
+                    ios = (ios / 1000) * 4
+                End If
 
                 calcDetails.Append("<tr align=left><td>Increased Other Structures</td><td>")
                 calcDetails.Append(FormatCurrency(ios))
@@ -10907,8 +10920,18 @@ Public Class Lloyds
                 Parent.AegisHO8_DwellingAmount.Text = "$" & CDec(Parent.mhvalue)
                 Parent.AegisHO8_OtherStructuresHeader.Text = FormatCurrency(0.0)
                 Parent.AegisHO8_ContentsHeader.Text = FormatCurrency(0.0)
-                Parent.AegisHO8_PersonalLiabilityHeader.Text = Parent.AegisHO8_PersonalLiability.SelectedValue
-                Parent.AegisHO8_MedicalPaymentHeader.Text = Parent.AegisHO8_MedicalPayment.SelectedValue
+                If Parent.AegisHO8_PersonalLiability.SelectedValue = "" Then
+                    Parent.AegisHO8_PersonalLiabilityHeader.Text = 0.ToString("c0")
+                Else
+                    Parent.AegisHO8_PersonalLiabilityHeader.Text = Parent.AegisHO8_PersonalLiability.SelectedValue
+                End If
+
+                If Parent.AegisHO8_MedicalPayment.SelectedValue = "" Then
+                    Parent.AegisHO8_MedicalPaymentHeader.Text = 0.ToString("c0")
+                Else
+                    Parent.AegisHO8_MedicalPaymentHeader.Text = Parent.AegisHO8_MedicalPayment.SelectedValue
+                End If
+
                 Parent.AegisHO8_BasePremiumAmountHeader.Text = basePremium.ToString("c0")
                 Parent.AegisHO8_OptionsHeader.Text = FormatCurrency(0.0)
                 Parent.AegisHO8_FeesHeader.Text = FormatCurrency(0.0)
@@ -10945,7 +10968,7 @@ Public Class Lloyds
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Parameters.Add("@mhValue", SqlDbType.VarChar, 8000).Value = CInt(Parent.mhvalue)
             cmd.Parameters.Add("@mhYear", SqlDbType.VarChar, 8000).Value = CInt(Parent.mhyear)
-            cmd.Parameters.Add("@prot", SqlDbType.VarChar, 8000).Value = "0"
+            cmd.Parameters.Add("@prot", SqlDbType.VarChar, 8000).Value = Parent.protection.Text
             cmd.Parameters.Add("@oStruc", SqlDbType.VarChar, 8000).Value = "0"
             cmd.Parameters.Add("@cont", SqlDbType.VarChar, 8000).Value = "0"
             cmd.Parameters.Add("@age", SqlDbType.VarChar, 8000).Value = "0"
